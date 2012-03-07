@@ -1,3 +1,11 @@
 I like to build a .vim dirtory for the vim set running on my all platform including windows,mac,linux(ubuntu e.g.)
 
 I tested them on my win7 , macbookpro and virtualbox ubuntu
+
+The list:
+
+plugin: zencoding matchit
+
+colorscheme:molokai
+
+.vimrc file
