@@ -15,8 +15,7 @@ set showmatch
 set tabstop=4
 set shiftwidth=4
 
-"此主题设置可忽略
-"colorscheme molokai
+colorscheme molokai
 
 set nowrap
 set autochdir
