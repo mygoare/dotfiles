@@ -45,3 +45,13 @@ the .vimrc setting based on my mac bookpro. This meaning other platform using th
 
 对于这个branch之间问题的处理，保持各个分支只是.vimrc文件不同，且始终不merge,只当需要修改.vimrc文件时才git checkout到branch进行文件cp
 如果添加plugin或其它，都还是在master中进行。
+
+
+2012.3.10 更新：
+
+在.vimrc中使用 操作系统判断 ，这使得branch无用武之地，个人觉得这是最好的解决方案。自己经过一番摸索，终成正果。
+以后改动起来就方便多了，只要在master中修改，add,commit,push之后，便可在各系统使用。覆盖原.vimrc即可。
+
+我在Windows,Ubuntu,Mac皆作过测试，通过。
+
+So have fun!
