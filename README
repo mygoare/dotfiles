@@ -39,3 +39,6 @@ in the .vimrc file , I using the \n to distinguish some contents in my order.
 
 
 the .vimrc setting based on my mac bookpro. This meaning other platform using this may make some changes like saied in the up paragrph.
+
+
+使用branch来解决多平台的问题，master为基础，其它平台相应扩展吧。
