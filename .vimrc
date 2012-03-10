@@ -22,7 +22,7 @@ set autochdir
 
 filetype plugin indent on
 
-set guifont=monaco:h10
+set guifont=monaco:h12
 
 set ruler
 set showcmd
