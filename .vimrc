@@ -1,6 +1,7 @@
 "set transparency=5
 set number
 set nobackup
+set noswapfile
 syntax on
 set nocompatible
 set ai
@@ -31,14 +32,14 @@ set go=
 
 set history=50
 
-"VIM乱码 （以下人最靠谱）
+"VIM锟斤拷锟斤拷 锟斤拷锟斤拷锟斤拷锟斤拷锟筋靠锟阶ｏ拷
 let &termencoding=&encoding
 set fileencodings=uft-8,gbk
 
 "colorscheme evening
 
 set t_Co=256
-"VIM的256色设置,可以让terminal也变为主题色,terminal默认只有8色
+"VIM锟斤拷256色锟斤拷锟斤拷,锟斤拷锟斤拷锟斤拷terminal也锟斤拷为锟斤拷锟斤拷色,terminal默锟斤拷只锟斤拷8色
 "
 
 "zencoding-vim ctrl-e set
