@@ -32,15 +32,14 @@ set go=
 
 set history=50
 
-"VIM���� ����������ף�
+"prevent messy cod
 let &termencoding=&encoding
 set fileencodings=uft-8,gbk
 
-"colorscheme evening
+colorscheme molokai
 
+"set terminal shell 256 colors
 set t_Co=256
-"VIM��256ɫ����,������terminalҲ��Ϊ����ɫ,terminalĬ��ֻ��8ɫ
-"
 
 "zencoding-vim ctrl-e set
   let g:user_zen_settings = {
