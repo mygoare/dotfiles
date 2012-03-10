@@ -1,5 +1,5 @@
 #!/bin/bash
-OS = `uname`
+OS=`uname`
 
 if ["$OS" == "Linux" || "$OS" == "Darwin"]
 then
