@@ -95,7 +95,7 @@ if MySys() == 'windows'
 	nmap <C-N> :tabnext<CR>
 	nmap <C-P> :tabprevious<CR>
 
-	set guifont=Monaco:h8
+	set guifont=consolas:h10
 else
 	let g:user_zen_expandabbr_key = '<D-e>'
 	set guifont=Monaco\ 9
