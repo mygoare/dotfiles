@@ -15,7 +15,8 @@ set showmatch
 set tabstop=4
 set shiftwidth=4
 
-colorscheme molokai
+"此主题设置可忽略
+"colorscheme molokai
 
 set nowrap
 set autochdir
@@ -55,8 +56,10 @@ let g:user_zen_expandabbr_key = '<c-e>'
 function! MySys()
 	if has("win32")
 		return "windows"
-	else
+	elseif has("mac")
 		return "mac"
+	else
+		return "linux"
 	endif
 endfunction
 
