@@ -35,6 +35,9 @@ set go=
 
 set history=50
 
+"auto reload file if changed outside
+set autoread
+
 "prevent messy cod
 let &termencoding=&encoding
 set fileencodings=uft-8,gbk
