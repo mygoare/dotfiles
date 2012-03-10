@@ -36,8 +36,6 @@ set history=50
 let &termencoding=&encoding
 set fileencodings=uft-8,gbk
 
-colorscheme molokai
-
 "set terminal shell 256 colors
 set t_Co=256
 
