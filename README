@@ -29,3 +29,10 @@ Notes:
 something in the .vimrc may need to change,they are:
 1. zencoding (the short cut)
 2. guifont (font & fontsize)
+
+
+
+this .vimrc using the monaco font, may you like it. I like this font very much.
+
+
+in the .vimrc file , I using the \n to distinguish some contents in my order.
