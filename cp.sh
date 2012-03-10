@@ -1,3 +1,9 @@
 #!/bin/bash
+OS = `uname`
 
-cp ./.vimrc ../.vimrc
+if ["$OS" == "Linux" || "$OS" == "Darwin"]
+then
+	cp ./.vimrc ../.vimrc
+else
+	cp ./.vimrc ../_vimrc
+fi
