@@ -4,14 +4,28 @@ I tested them on my win7 , macbookpro and virtualbox ubuntu
 
 The list:
 
-plugin: zencoding matchit
+plugin: zencoding , matchit , vimim (vimim_wubijd.txt 极点五笔输入法词库)
 
 colorscheme:molokai
 
 .vimrc file
 
 
+
+
+
 How do I using this?
 
 git clone the repo,move the .vimrc file to the ../ , then just make some changes through the different of all platform . then , You can use it.
 I think it's nice.
+
+
+
+
+
+
+Notes:
+
+something in the .vimrc may need to change,they are:
+1. zencoding (the short cut)
+2. guifont (font & fontsize)
