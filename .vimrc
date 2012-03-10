@@ -49,6 +49,8 @@ set fileencodings=uft-8,gbk
 set t_Co=256
 
 
+"zencoding-vim ctrl-e set
+let g:user_zen_expandabbr_key = '<c-e>'
  
 function! MySys()
 	if has("win32")
@@ -59,24 +61,6 @@ function! MySys()
 endfunction
 
 if MySys() == 'windows'
-	"zencoding-vim ctrl-e set
-	let g:user_zen_settings = {
-	\  'indentation' : '  ',
-	\  'perl' : {
-	\    'aliases' : {
-	\      'req' : 'require '
-	\    },
-	\    'snippets' : {
-	\      'use' : "use strict\nuse warnings\n\n",
-	\      'warn' : "warn \"|\";",
-	\    }
-	\  }
-	\}
-
-	let g:user_zen_expandabbr_key = '<c-e>'
-
-	let g:use_zen_complete_tag = 1
-
 
 	map <F3> :NERDTree<CR>
 	map <F2> :e ~/_vimrc<CR>
@@ -97,6 +81,5 @@ if MySys() == 'windows'
 
 	set guifont=consolas:h10
 else
-	let g:user_zen_expandabbr_key = '<D-e>'
 	set guifont=Monaco\ 9
 endif
