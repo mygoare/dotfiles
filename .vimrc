@@ -82,6 +82,8 @@ if MySys() == 'windows'
 	nmap <C-P> :tabprevious<CR>
 
 	set guifont=consolas:h10
-else
+elseif MySys() == 'mac'
 	set guifont=Monaco\ 9
+else
+	set guifont=Monospace\ 10
 endif
