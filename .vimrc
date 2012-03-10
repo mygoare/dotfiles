@@ -1,9 +1,12 @@
 "set transparency=5
+syntax on
 set number
+
 set nobackup
 set noswapfile
-syntax on
+
 set nocompatible
+
 set ai
 set smartindent
 set cindent
@@ -19,13 +22,13 @@ set autochdir
 
 filetype plugin indent on
 
-"set guifont=monaco:h10
+set guifont=monaco:h10
 
 set ruler
 set showcmd
+
 set incsearch
 set hlsearch
-
 set cursorline
 
 set go=
