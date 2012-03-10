@@ -9,3 +9,9 @@ plugin: zencoding matchit
 colorscheme:molokai
 
 .vimrc file
+
+
+How do I using this?
+
+git clone the repo,move the .vimrc file to the ../ , then just make some changes through the different of all platform . then , You can use it.
+I think it's nice.
