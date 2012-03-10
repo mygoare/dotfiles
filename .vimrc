@@ -62,3 +62,16 @@ set t_Co=256
   let g:user_zen_expandabbr_key = '<c-e>'
 
   let g:use_zen_complete_tag = 1
+
+ 
+function! MySys()
+	if has("win32")
+		return "windows"
+	else
+		return "mac"
+	endif
+endfunction
+
+if MySys() == 'mac'
+	set number
+endif
