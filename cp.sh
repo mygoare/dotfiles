@@ -6,7 +6,7 @@ then
 	cp ./.vimrc ../.vimrc
 elif [ "$OS" = "Darwin" ] 
 then
-	cp ./.vimrc ../_vimrc
+	cp ./.vimrc ../.vimrc
 else
 	cp ./.vimrc ../_vimrc
 fi
