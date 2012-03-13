@@ -68,10 +68,6 @@ if MySys() == 'windows'
 	map <F2> :e ~/_vimrc<CR>
 	map <c-t> :tabnew<CR>
 
-	map <c-s> :w<CR>
-	map <c-c> "+y
-	map <c-v> "+p
-
 	inoremap <C-h> <Left>
 	inoremap <C-j> <Down>
 	inoremap <C-k> <Up>
