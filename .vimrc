@@ -43,7 +43,8 @@ set backspace=indent,eol,start
 
 "prevent messy cod
 let &termencoding=&encoding
-set fileencodings=utf-8,gbk
+set fileencoding=utf-8
+set fileencodings=utf-8,gbk,ucs-bom,cp936
 
 "set terminal shell 256 colors
 set t_Co=256
