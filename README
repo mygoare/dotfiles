@@ -71,3 +71,11 @@ vimim.vimËùµ¼ÖÂµÄvimÆô¶¯ÂýµÄÎÊÌâÒÑ¾­ÒâÍâµÃµ½½â¾ö£¬ÒòÎªÖ»ÓÐÔÚWindowsÉÏ²Å»á³öÏÖ¸ÃÎ
 
 2012.4.10 ÉÏÎç
 ÒòÎªvimim×ÔÉíµÄ´æÔÚµÄÒ»Ð©È±ÏÝ£¬±ÈÈç ÊäÈë·¨Ö®¼ä²»ÄÜÇÐ»»£¬´ò²»³öÖÐÎÄµÄ ¶ÙºÅ µÈµÈ£¬ËùÒÔ»¹ÊÇ¾ö¶¨·ÅÆúvimim£¬»¹ÊÇÓÃÏµÍ³×Ô´øµÄÊäÈë·¨¡£
+
+2012.5.1
+ÊÜµ½ÔÚÏÂÎçÔÚ¹â¹ÈÊé³Ç¿´LinuxµÄÊé£¬¿´µ½vimdoc ÖÐÎÄ°ïÖúÎÄµµ£¬ËùÒÔ»ØÀ´¸øVIM¼ÓÉÏÁË£¬ÌØ´Ë¸üÐÂ£¡
+1. ÔÚsourceforgeÏÂÔØtar.gz°ü
+2. ½âÑ¹ tar -zxvf vimdoc-1.8.0.tar.gz
+3. cd vimcdoc-1.8.0
+4. °²×° sudo ./vimdoc.sh -i
+5. ÖØÆôvim£¬ :set helplang=cn , :help ¼´¿É

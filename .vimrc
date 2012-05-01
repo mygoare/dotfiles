@@ -2,6 +2,8 @@
 syntax on
 set number
 
+set helplang=cn
+
 set nobackup
 set noswapfile
 
