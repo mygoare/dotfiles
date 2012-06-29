@@ -90,3 +90,5 @@ elseif MySys() == 'mac'
 else
 	set guifont=Monospace\ 9
 endif
+
+set foldmethod=marker
