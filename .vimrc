@@ -92,3 +92,7 @@ else
 endif
 
 set foldmethod=marker
+
+
+" for less to auto compile
+ autocmd BufWritePost *.less exe '!lessc ' . shellescape(expand('<afile>')) . ' ' . shellescape(expand('<afile>:r')) . '.css'	
