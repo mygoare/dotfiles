@@ -96,3 +96,9 @@ set foldmethod=marker
 
 " for less to auto compile
  autocmd BufWritePost *.less exe '!lessc ' . shellescape(expand('<afile>')) . ' ' . shellescape(expand('<afile>:r')) . '.css'	
+
+" NERDTree
+map <C-N> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
+
+"set scrolljump=5
+set scrolloff=3
