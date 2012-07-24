@@ -91,7 +91,8 @@ else
 	set guifont=Monospace\ 9
 endif
 
-set foldmethod=marker
+" vim code fold
+"set foldmethod=marker
 
 
 " for less to auto compile
