@@ -101,5 +101,5 @@ endif
 " NERDTree
 map <C-N> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
 
-"set scrolljump=5
+set scrolljump=5
 set scrolloff=3
