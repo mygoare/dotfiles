@@ -103,3 +103,7 @@ map <C-N> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
 
 set scrolljump=5
 set scrolloff=3
+
+" map gt & gT
+map <S-h> gT
+map <S-l> gt
