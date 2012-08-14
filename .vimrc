@@ -107,3 +107,8 @@ set scrolloff=3
 " map gt & gT
 map <S-h> gT
 map <S-l> gt
+
+" CtrlP basic options
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'rc'
