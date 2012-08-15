@@ -105,8 +105,8 @@ set scrolljump=5
 set scrolloff=3
 
 " map gt & gT
-map <S-h> gT
-map <S-l> gt
+map <C-h> gT
+map <C-l> gt
 
 " CtrlP basic options
 let g:ctrlp_map = '<c-p>'
