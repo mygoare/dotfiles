@@ -20,7 +20,7 @@ set shiftwidth=4
 colorscheme molokai
 
 set nowrap
-set autochdir
+"set autochdir
 
 filetype plugin indent on
 
@@ -101,6 +101,9 @@ endif
 " NERDTree
 map <C-N> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
 
+" NERDTree open file auto close
+let NERDTreeQuitOnOpen = 1
+
 set scrolljump=5
 set scrolloff=3
 
@@ -112,3 +115,8 @@ map <C-l> gt
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'rc'
+" CtrlP open file at new tab
+let g:ctrlp_prompt_mappings = {
+	\ 'AcceptSelection("e")': [],
+	\ 'AcceptSelection("t")': ['<cr>', '<c-m>'],
+	\}
