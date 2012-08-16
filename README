@@ -79,3 +79,9 @@ vimim.vimËùµ¼ÖÂµÄvimÆô¶¯ÂıµÄÎÊÌâÒÑ¾­ÒâÍâµÃµ½½â¾ö£¬ÒòÎªÖ»ÓĞÔÚWindowsÉÏ²Å»á³öÏÖ¸ÃÎ
 3. cd vimcdoc-1.8.0
 4. °²×° sudo ./vimdoc.sh -i
 5. ÖØÆôvim£¬ :set helplang=cn , :help ¼´¿É
+
+vim insert date/time
+:r !date
+
+Thu Aug 16 17:45:22 CST 2012
+add my tmux config file : .tmux.conf
