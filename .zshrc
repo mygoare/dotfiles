@@ -35,5 +35,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-#tmux use vi colorscheme
-alias tmux='TERM=screen-256color-bce tmux'
+bindkey "^R" history-incremental-search-backward
+
+# tmux lose vim colorscheme
+alias tmux="TERM=screen-256color-bce tmux"
