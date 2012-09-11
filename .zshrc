@@ -21,7 +21,7 @@ ZSH_THEME="robbyrussell"
 # DISABLE_LS_COLORS="true"
 
 # Uncomment following line if you want to disable autosetting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 # COMPLETION_WAITING_DOTS="true"
@@ -39,3 +39,5 @@ bindkey "^R" history-incremental-search-backward
 
 # tmux lose vim colorscheme
 alias tmux="TERM=screen-256color-bce tmux"
+
+alias vim="vim -p"
