@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/elemedev/workspace/eleme/trunk/web/js/walle'
+let g:netrw_dirhist_2='/home/elemedev/workspace/eleme/trunk/apps/walle/modules/cocaGiftApply'
+let g:netrw_dirhist_3='/home/elemedev/workspace/eleme/trunk/apps/admin/modules/user_gift'
+let g:netrw_dirhist_4='/home/elemedev/workspace/eleme/trunk/apps/walle/modules/restaurantOpenApply'
+let g:netrw_dirhist_5='/home/elemedev/workspace/eleme/trunk/apps/admin/modules/sfGuardUserProfile'
