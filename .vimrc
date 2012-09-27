@@ -14,8 +14,8 @@ set smartindent
 set cindent
 set showmatch
 
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 
 colorscheme molokai
 
