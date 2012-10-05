@@ -95,5 +95,4 @@ auto_mkdir
 ctrlp   
 matchit 
 zencoding.vim 
-autoclose
 matrix
