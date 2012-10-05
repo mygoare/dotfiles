@@ -85,3 +85,15 @@ vim insert date/time
 
 Thu Aug 16 17:45:22 CST 2012
 add my tmux config file : .tmux.conf
+
+
+2012年10月 5日 星期五 18时11分41秒 CST
+总结下vim所安装的所有插件：
+NERD_commenter
+NERD_tree
+auto_mkdir
+ctrlp   
+matchit 
+zencoding.vim 
+autoclose
+matrix
