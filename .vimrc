@@ -112,6 +112,8 @@ set scrolloff=3
 :map <C-l> gt
 :map! <C-h> <Left>
 :map! <C-l> <Right>
+:map! <C-j> <Down>
+:map! <C-k> <Up>
 
 " CtrlP basic options
 let g:ctrlp_map = '<c-p>'
