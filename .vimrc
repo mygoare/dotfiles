@@ -14,8 +14,10 @@ set smartindent
 set cindent
 set showmatch
 
-set tabstop=2
-set shiftwidth=2
+" deal with tab
+set tabstop=2 shiftwidth=2 expandtab
+set list
+set listchars=tab:-\ ,trail:\ ,extends:#,nbsp:\
 
 colorscheme molokai
 
