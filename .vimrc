@@ -48,9 +48,9 @@ set backspace=indent,eol,start
 "prevent messy cod
 set encoding=utf-8
 if has("win32")
-	set fileencoding=chinese
+  set fileencoding=chinese
 else
-	set fileencoding=utf-8
+  set fileencoding=utf-8
 endif
 set fileencodings=utf-8,gbk,ucs-bom,cp936
 
@@ -62,35 +62,35 @@ set t_Co=256
 let g:user_zen_expandabbr_key = '<c-e>'
  
 function! MySys()
-	if has("win32")
-		return "windows"
-	elseif has("mac")
-		return "mac"
-	else
-		return "linux"
-	endif
+  if has("win32")
+    return "windows"
+  elseif has("mac")
+    return "mac"
+  else
+    return "linux"
+  endif
 endfunction
 
 if MySys() == 'windows'
 
-	map <F3> :NERDTree<CR>
-	map <F2> :e ~/_vimrc<CR>
-	map <c-t> :tabnew<CR>
+  map <F3> :NERDTree<CR>
+  map <F2> :e ~/_vimrc<CR>
+  map <c-t> :tabnew<CR>
 
-	inoremap <C-h> <Left>
-	inoremap <C-j> <Down>
-	inoremap <C-k> <Up>
-	inoremap <C-l> <Right>
-	inoremap <C-d> <DELETE>
+  inoremap <C-h> <Left>
+  inoremap <C-j> <Down>
+  inoremap <C-k> <Up>
+  inoremap <C-l> <Right>
+  inoremap <C-d> <DELETE>
 
-	nmap <C-N> :tabnext<CR>
-	nmap <C-P> :tabprevious<CR>
+  nmap <C-N> :tabnext<CR>
+  nmap <C-P> :tabprevious<CR>
 
-	set guifont=consolas:h10
+  set guifont=consolas:h10
 elseif MySys() == 'mac'
-	set guifont=Monaco\ 9
+  set guifont=Monaco\ 9
 else
-	set guifont=Monospace\ 9
+  set guifont=Monospace\ 9
 endif
 
 " vim code fold
@@ -98,7 +98,7 @@ endif
 
 
 " for less to auto compile
- autocmd BufWritePost *.less exe '!lessc ' . shellescape(expand('<afile>')) . ' ' . shellescape(expand('<afile>:r')) . '.css'	
+ autocmd BufWritePost *.less exe '!lessc ' . shellescape(expand('<afile>')) . ' ' . shellescape(expand('<afile>:r')) . '.css' 
 
 " NERDTree
 map <C-N> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
@@ -123,6 +123,9 @@ let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'rc'
 " CtrlP open file at new tab
 let g:ctrlp_prompt_mappings = {
-	\ 'AcceptSelection("e")': [],
-	\ 'AcceptSelection("t")': ['<cr>', '<c-m>'],
-	\}
+  \ 'AcceptSelection("e")': [],
+  \ 'AcceptSelection("t")': ['<cr>', '<c-m>'],
+  \}
+
+map <F1> :tabe ~/.vimrc <CR>
+map <F2> :retab <CR> :w <CR>
