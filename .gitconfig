@@ -2,6 +2,6 @@
 	name = mygoare
   email = mygoare@gmail.com
 [core]
-  editor = vim
+  editor = vim ; use vim to edit commit
 [color]
   ui = auto
