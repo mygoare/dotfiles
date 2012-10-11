@@ -1,0 +1,7 @@
+[user]
+	name = mygoare
+  email = mygoare@gmail.com
+[core]
+  editor = vim
+[color]
+  ui = auto
