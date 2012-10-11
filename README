@@ -98,4 +98,8 @@ zencoding.vim
 autoclose
 matrix
 
-![nice](www.mygoare.com/content/templates/simy/dragon_bg.jpg)
+
+2012年10月11日 星期四 14时39分59秒 CST
+tips: write the some single config to system global config file
+e.g.
+/etc/zshrc    (strings =zsh | grep zshrc)
