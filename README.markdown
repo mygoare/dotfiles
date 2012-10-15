@@ -1,6 +1,7 @@
 ![jiong](http://github.com/mygoare/.vim/raw/master/jiong.png)
+_______
 
-It contains follows:
+### It contains follows:
 
 1. vim config
 2. tmux config
