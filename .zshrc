@@ -44,3 +44,8 @@ alias vim="vim -p"
 
 # fix terminal 中文乱码
 export LANG='zh_CN.UTF-8'
+
+# aliases zsh
+if [ -f ~/.zsh_aliases ]; then
+    . ~/.zsh_aliases
+fi
