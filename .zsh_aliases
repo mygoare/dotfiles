@@ -31,3 +31,6 @@ alias cdele='cd ~/workspace/eleme/trunk;'
 alias cdze='cd ~/workspace/eleme/zeus'
 
 alias redis-server='redis-server /usr/local/etc/redis.conf'
+
+alias sshu='ssh mygoare@172.16.104.130'
+alias sshele='ssh elemedev@172.16.104.129'
