@@ -1,5 +1,5 @@
 [user]
-	name = mygoare
+  name = mygoare
   email = mygoare@gmail.com
 [core]
   editor = vim ; use vim to edit commit
