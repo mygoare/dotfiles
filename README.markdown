@@ -17,6 +17,8 @@ _______
 * Bundle 'scrooloose/nerdtree'
 * Bundle 'molokai'
 
-### To install
+### How to install
 
-Launch vim, run :BundleInstall (or vim +BundleInstall! +BundleClean +qall for CLI lovers)
+1. https://github.com/mygoare/.vim/blob/master/.vimrc
+2. git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+3. Launch vim, run :BundleInstall (or vim +BundleInstall! +BundleClean +qall for CLI lovers)
