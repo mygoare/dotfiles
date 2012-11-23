@@ -1,12 +1,21 @@
-![jiong](http://github.com/mygoare/.vim/raw/master/jiong.png)
+![jiong](http://github.com/mygoare/.vim/raw/master/bak/jiong.png)
 _______
 
 ### It contains follows:
 
-1. vim config
-2. tmux config
-3. zsh config
-4. git config
-5. vim plugins (autoclose, auto_makedir, ctrlP, matchit, NERD_commenter, NERD_tree, zencoding, matrix)
-6. oh-my-zsh (my own theme named mygoare)
-7. chrome proxy config
+"My bundles here:
+1.Bundle 'mattn/zencoding-vim'
+2.Bundle 'ctrlp.vim'
+3.Bundle 'AutoClose'
+4.Bundle 'matchit.zip'
+5.Bundle 'auto_mkdir'
+6.Bundle 'taglist.vim'
+7.Bundle 'rails.vim'
+8.Bundle 'snipMate'
+9.Bundle 'scrooloose/nerdcommenter'
+10.Bundle 'scrooloose/nerdtree'
+11.Bundle 'molokai'
+
+### To install
+
+Launch vim, run :BundleInstall (or vim +BundleInstall +qall for CLI lovers)
