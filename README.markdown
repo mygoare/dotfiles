@@ -19,6 +19,6 @@ _______
 
 ### How to install
 
-1. https://github.com/mygoare/.vim/blob/master/.vimrc
+1. https://github.com/mygoare/.vim/blob/master/.vimrc > ~/.vimrc
 2. git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 3. Launch vim, run :BundleInstall (or vim +BundleInstall! +BundleClean +qall for CLI lovers)
