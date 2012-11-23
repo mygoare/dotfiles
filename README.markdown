@@ -19,4 +19,4 @@ _______
 
 ### To install
 
-Launch vim, run :BundleInstall (or vim +BundleInstall +qall for CLI lovers)
+Launch vim, run :BundleInstall (or vim +BundleInstall! +BundleClean +qall for CLI lovers)
