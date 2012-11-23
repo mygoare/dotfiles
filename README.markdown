@@ -5,17 +5,17 @@ _______
 
 "My bundles here:
 
-1. Bundle 'mattn/zencoding-vim'
-2. Bundle 'ctrlp.vim'
-3. Bundle 'AutoClose'
-4. Bundle 'matchit.zip'
-5. Bundle 'auto_mkdir'
-6. Bundle 'taglist.vim'
-7. Bundle 'rails.vim'
-8. Bundle 'snipMate'
-9. Bundle 'scrooloose/nerdcommenter'
-10. Bundle 'scrooloose/nerdtree'
-11. Bundle 'molokai'
+* Bundle 'mattn/zencoding-vim'
+* Bundle 'ctrlp.vim'
+* Bundle 'AutoClose'
+* Bundle 'matchit.zip'
+* Bundle 'auto_mkdir'
+* Bundle 'taglist.vim'
+* Bundle 'rails.vim'
+* Bundle 'snipMate'
+* Bundle 'scrooloose/nerdcommenter'
+* Bundle 'scrooloose/nerdtree'
+* Bundle 'molokai'
 
 ### To install
 
