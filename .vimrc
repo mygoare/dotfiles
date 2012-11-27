@@ -140,3 +140,13 @@ Bundle 'molokai'
 
 "put it just after Bundle 'molokai', it works
 colorscheme molokai
+
+"taglist config
+"let Tlist_Show_One_File = 1
+"let Tlist_Exit_OnlyWindow = 1
+"let Tlist_File_Fold_Auto_Close = 1
+let Tlist_Close_On_Select = 1
+let Tlist_Use_Right_Window = 1
+
+"taglist
+map <C-M> :TlistOpen<CR>
