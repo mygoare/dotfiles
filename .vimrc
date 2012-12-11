@@ -102,10 +102,10 @@ set scrolloff=3
 "map gt & gT
 :map <C-h> gT
 :map <C-l> gt
-:map! <C-h> <Left>
-:map! <C-l> <Right>
-:map! <C-j> <Down>
-:map! <C-k> <Up>
+inoremap <C-h> <Left>
+inoremap <C-l> <Right>
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
 
 "CtrlP basic options
 let g:ctrlp_map = '<c-p>'
@@ -131,7 +131,6 @@ Bundle 'ctrlp.vim'
 Bundle 'AutoClose'
 Bundle 'matchit.zip'
 Bundle 'auto_mkdir'
-Bundle 'taglist.vim'
 Bundle 'tpope/vim-rails'
 Bundle 'snipMate'
 Bundle 'scrooloose/nerdcommenter'
@@ -140,13 +139,3 @@ Bundle 'molokai'
 
 "put it just after Bundle 'molokai', it works
 colorscheme molokai
-
-"taglist config
-"let Tlist_Show_One_File = 1
-"let Tlist_Exit_OnlyWindow = 1
-"let Tlist_File_Fold_Auto_Close = 1
-let Tlist_Close_On_Select = 1
-let Tlist_Use_Right_Window = 1
-
-"taglist
-map <C-M> :TlistOpen<CR>
