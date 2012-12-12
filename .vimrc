@@ -135,7 +135,17 @@ Bundle 'tpope/vim-rails'
 Bundle 'snipMate'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
-Bundle 'molokai'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'ervandew/supertab'
 
 "put it just after Bundle 'molokai', it works
-colorscheme molokai
+set background=dark
+let g:solarized_termcolors=256
+let g:solarized_termtrans=1
+colorscheme solarized
+
+"jk to esc
+inoremap jk <esc>
+
+map [f $
+map [h ^
