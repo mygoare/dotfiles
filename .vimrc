@@ -79,7 +79,7 @@ if MySys() == 'windows'
 
   set guifont=consolas:h10
 elseif MySys() == 'mac'
-  set guifont=Monaco:h11
+  set guifont=Monaco:h12
 else
   set guifont=Monospace\ 9
 endif
