@@ -14,7 +14,8 @@ _______
 * Bundle 'snipMate'
 * Bundle 'scrooloose/nerdcommenter'
 * Bundle 'scrooloose/nerdtree'
-* Bundle 'molokai'
+* Bundle 'altercation/vim-colors-solarized'
+* Bundle 'ervandew/supertab'
 
 ### How to install
 

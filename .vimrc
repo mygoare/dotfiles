@@ -128,15 +128,15 @@ Bundle 'gmarik/vundle'
 "My bundles here:
 Bundle 'mattn/zencoding-vim'
 Bundle 'ctrlp.vim'
-Bundle 'AutoClose'
+Bundle 'Townk/vim-autoclose'
 Bundle 'matchit.zip'
 Bundle 'auto_mkdir'
 Bundle 'tpope/vim-rails'
-Bundle 'snipMate'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'ervandew/supertab'
+Bundle 'mygoare/snipmate.vim'
 
 "put it just after Bundle 'molokai', it works
 set background=dark
