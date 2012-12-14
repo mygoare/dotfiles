@@ -126,6 +126,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 "My bundles here:
+Bundle 'tpope/vim-pathogen'
 Bundle 'mattn/zencoding-vim'
 Bundle 'ctrlp.vim'
 Bundle 'Townk/vim-autoclose'
@@ -138,8 +139,6 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'ervandew/supertab'
 Bundle 'mygoare/snipmate.vim'
 Bundle 'groenewege/vim-less'
-Bundle 'tpope/vim-pathogen'
-Bundle 'scrooloose/syntastic'
 
 "put it just after Bundle 'molokai', it works
 set background=dark
