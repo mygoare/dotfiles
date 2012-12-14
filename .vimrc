@@ -137,6 +137,9 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'ervandew/supertab'
 Bundle 'mygoare/snipmate.vim'
+Bundle 'groenewege/vim-less'
+Bundle 'tpope/vim-pathogen'
+Bundle 'scrooloose/syntastic'
 
 "put it just after Bundle 'molokai', it works
 set background=dark
@@ -149,3 +152,5 @@ inoremap jk <esc>
 
 map [f $
 map [h ^
+
+call pathogen#infect()
