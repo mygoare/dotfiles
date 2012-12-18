@@ -139,6 +139,7 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'ervandew/supertab'
 Bundle 'mygoare/snipmate.vim'
 Bundle 'groenewege/vim-less'
+Bundle 'vim-scripts/jsbeautify'
 
 "put it just after Bundle 'molokai', it works
 set background=dark
@@ -153,3 +154,5 @@ map [f $
 map [h ^
 
 call pathogen#infect()
+
+map ; :
