@@ -5,17 +5,20 @@ _______
 
 "My bundles here:
 
+* Bundle 'tpope/vim-pathogen'
 * Bundle 'mattn/zencoding-vim'
 * Bundle 'ctrlp.vim'
-* Bundle 'AutoClose'
+* Bundle 'Townk/vim-autoclose'
 * Bundle 'matchit.zip'
 * Bundle 'auto_mkdir'
-* Bundle 'rails.vim'
-* Bundle 'snipMate'
+* Bundle 'tpope/vim-rails'
 * Bundle 'scrooloose/nerdcommenter'
 * Bundle 'scrooloose/nerdtree'
 * Bundle 'altercation/vim-colors-solarized'
 * Bundle 'ervandew/supertab'
+* Bundle 'mygoare/snipmate.vim'
+* Bundle 'groenewege/vim-less'
+* Bundle 'vim-scripts/jsbeautify'
 
 ### How to install
 
