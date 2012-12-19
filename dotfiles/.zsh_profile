@@ -1,0 +1,2 @@
+#set PATH for mysql
+export PATH="/usr/local/mysql/bin:$PATH"

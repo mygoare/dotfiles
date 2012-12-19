@@ -1,0 +1,28 @@
+alias grep='grep --color=auto'
+alias pg='ps aux | grep'
+
+alias sshu='ssh mygoare@172.16.85.129'
+
+#C-r
+bindkey "^R" history-incremental-search-backward
+
+# tmux lose vim colorscheme
+alias tmux="TERM=screen-256color-bce tmux"
+
+alias vim="vim -p"
+
+# fix terminal 中文乱码
+export LANG='zh_CN.UTF-8'
+
+alias ...="cd ../../../"
+alias ....="cd ../../../../"
+alias ~="cd ~"
+alias p="cd ~/Projects"
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias dd="cd ~/Documents"
+alias www="cd /Library/WebServer/Documents"
+
+alias v='vim'
+
+SAVEHIST=1000

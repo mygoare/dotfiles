@@ -156,3 +156,5 @@ map [h ^
 call pathogen#infect()
 
 map ; :
+
+cmap w!! :w !sudo tee %
