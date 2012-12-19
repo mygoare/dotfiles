@@ -1,4 +1,4 @@
-![jiong](http://github.com/mygoare/.vim/raw/master/bak/jiong.png)
+![jiong](http://github.com/mygoare/.vim/raw/master/jiong.png)
 _______
 
 ### It contains follows:
@@ -19,8 +19,8 @@ _______
 
 ### How to install
 
-1. git clone git@github.com:mygoare/.vim.git ~/Document/vim/
-2. ln -sf ~/Document/vim/.vimrc ~/.vimrc
+1. git clone git@github.com:mygoare/.vim.git ~/Projects/vim/
+2. ln -sf ~/Projects/vim/.vimrc ~/.vimrc
 3. git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 4. Launch vim, run :BundleInstall (or vim +BundleInstall! +BundleClean +qall for CLI lovers)
 
