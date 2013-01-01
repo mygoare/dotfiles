@@ -2,6 +2,9 @@
 syntax on
 set number
 
+"default leader is '\'
+let mapleader = ','
+
 set helplang=cn
 
 set nobackup
@@ -96,6 +99,8 @@ map <C-N> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
 "NERDTree open file auto close
 let NERDTreeQuitOnOpen = 1
 
+map <C-T> :tabe<CR>
+
 set scrolljump=5
 set scrolloff=3
 
@@ -140,6 +145,7 @@ Bundle 'ervandew/supertab'
 Bundle 'mygoare/snipmate.vim'
 Bundle 'groenewege/vim-less'
 Bundle 'vim-scripts/jsbeautify'
+Bundle 'tpope/vim-surround'
 
 "put it just after Bundle 'molokai', it works
 set background=dark
@@ -158,3 +164,6 @@ call pathogen#infect()
 map ; :
 
 cmap w!! :w !sudo tee %
+
+"change to working dir quickly
+nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>
