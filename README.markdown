@@ -19,6 +19,7 @@ _______
 * Bundle 'mygoare/snipmate.vim'
 * Bundle 'groenewege/vim-less'
 * Bundle 'vim-scripts/jsbeautify'
+* Bundle 'tpope/vim-surround'
 
 ### How to install
 
