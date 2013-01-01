@@ -20,7 +20,7 @@ alias ~="cd ~"
 alias p="cd ~/Projects"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias dd="cd ~/Documents"
+alias dc="cd ~/Documents"
 alias www="cd /Library/WebServer/Documents"
 
 alias v='vim'
