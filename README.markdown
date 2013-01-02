@@ -35,9 +35,9 @@ _______
 
 ### ln link
 cd ~/Projects folder
-1. ln -sf ~/Projects/dotfiles/.gitconfig ~/.gitconfig
-2. ln -sf ~/Projects/dotfiles/.tmux.conf ~/.tmux.conf
-3. ln -sf ~/Projects/dotfiles/.zsh_aliases ~/.zsh_aliases
-4. ln -sf ~/Projects/dotfiles/.zsh_profile ~/.zsh_profile
-5. ln -sf ~/Projects/dotfiles/.zshrc ~/.zshrc
-6. cp ~/Projects/dotfiles/mygoare.zsh-theme ~/.oh-my-zsh/themes/
+1. ln -sf ~/Projects/vim/dotfiles/.gitconfig ~/.gitconfig
+2. ln -sf ~/Projects/vim/dotfiles/.tmux.conf ~/.tmux.conf
+3. ln -sf ~/Projects/vim/dotfiles/.zsh_aliases ~/.zsh_aliases
+4. ln -sf ~/Projects/vim/dotfiles/.zsh_profile ~/.zsh_profile
+5. ln -sf ~/Projects/vim/dotfiles/.zshrc ~/.zshrc
+6. cp ~/Projects/vim/dotfiles/mygoare.zsh-theme ~/.oh-my-zsh/themes/
