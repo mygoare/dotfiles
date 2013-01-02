@@ -135,7 +135,7 @@ set guifont=Monaco\ for\ Powerline
 let g:Powerline_symbols = 'fancy'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"vim maps
+"map settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 map <C-T> :tabe<CR>
@@ -163,6 +163,9 @@ cmap w!! :w !sudo tee %
 
 "change to working dir quickly
 nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>
+
+"disable highlight search
+:nnoremap <CR> :nohlsearch<CR><CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "functions

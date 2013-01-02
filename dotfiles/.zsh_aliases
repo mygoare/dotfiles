@@ -7,7 +7,7 @@ alias sshu='ssh mygoare@172.16.85.129'
 bindkey "^R" history-incremental-search-backward
 
 # tmux lose vim colorscheme
-alias tmux="TERM=screen-256color-bce tmux"
+alias tmux="tmux -2"
 
 alias vim="vim -p"
 
