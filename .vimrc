@@ -155,7 +155,7 @@ map <F2> :retab <CR> :w <CR>
 inoremap jk <esc>
 
 map [f $
-map [h ^
+map [j ^
 
 map ; :
 
