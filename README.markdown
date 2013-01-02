@@ -33,7 +33,7 @@ My bundles here:
 1. git pull the repo
 2. vim +BundleInstall! +BundleClean +qall
 
-### ln link
+### Ln link
 
 cd ~/Projects folder
 
@@ -43,3 +43,12 @@ cd ~/Projects folder
 4. ln -sf ~/Projects/vim/dotfiles/.zsh_profile ~/.zsh_profile
 5. ln -sf ~/Projects/vim/dotfiles/.zshrc ~/.zshrc
 6. cp ~/Projects/vim/dotfiles/mygoare.zsh-theme ~/.oh-my-zsh/themes/
+
+### About oh-my-zsh
+
+I use the zsh-syntax-highlighting plugin. So you have to install it.
+
+It is simple: 
+  * cd ~/.oh-my-zsh/plugins/
+  * git clone git@github.com:zsh-users/zsh-syntax-highlighting.git
+  * done
