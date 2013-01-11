@@ -161,8 +161,6 @@ inoremap jk <esc>
 map [f $
 map [j ^
 
-map ; :
-
 cmap w!! :w !sudo tee %
 
 "change to working dir quickly

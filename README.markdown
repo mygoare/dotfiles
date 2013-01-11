@@ -48,7 +48,7 @@ My bundles here:
 
 ### About oh-my-zsh
 
-I use the zsh-syntax-highlighting plugin. So you have to install it.
+I use the [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) plugin. So you have to install it.
 
 It is simple:
 
@@ -57,7 +57,7 @@ It is simple:
 
 ### Markdown.pl
 
-It's a perl file to convert the markdown format text to html code.
+It's a perl file to convert the [markdown](http://daringfireball.net/projects/markdown/) format text to html code.
 
 ### Manaco-Powerline.otf
 
