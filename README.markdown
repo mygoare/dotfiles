@@ -20,6 +20,8 @@ My bundles here:
 * Bundle 'groenewege/vim-less'
 * Bundle 'vim-scripts/jsbeautify'
 * Bundle 'tpope/vim-surround'
+* Bundle 'Lokaltog/vim-powerline'
+* Bundle 'hallison/vim-markdown'
 
 ### How to install
 
@@ -37,12 +39,17 @@ My bundles here:
 
 cd ~/Projects folder
 
-1. ln -sf ~/Projects/vim/dotfiles/.gitconfig ~/.gitconfig
-2. ln -sf ~/Projects/vim/dotfiles/.tmux.conf ~/.tmux.conf
-3. ln -sf ~/Projects/vim/dotfiles/.zsh_aliases ~/.zsh_aliases
-4. ln -sf ~/Projects/vim/dotfiles/.zsh_profile ~/.zsh_profile
-5. ln -sf ~/Projects/vim/dotfiles/.zshrc ~/.zshrc
-6. cp ~/Projects/vim/dotfiles/mygoare.zsh-theme ~/.oh-my-zsh/themes/
+`ln -sf ~/Projects/vim/dotfiles/.gitconfig ~/.gitconfig`
+
+`ln -sf ~/Projects/vim/dotfiles/.tmux.conf ~/.tmux.conf`
+
+`ln -sf ~/Projects/vim/dotfiles/.zsh_aliases ~/.zsh_aliases`
+
+`ln -sf ~/Projects/vim/dotfiles/.zsh_profile ~/.zsh_profile`
+
+`ln -sf ~/Projects/vim/dotfiles/.zshrc ~/.zshrc`
+
+`cp ~/Projects/vim/dotfiles/mygoare.zsh-theme ~/.oh-my-zsh/themes/`
 
 ### About oh-my-zsh
 
