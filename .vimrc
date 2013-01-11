@@ -93,6 +93,7 @@ Bundle 'groenewege/vim-less'
 Bundle 'vim-scripts/jsbeautify'
 Bundle 'tpope/vim-surround'
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'hallison/vim-markdown'
 
 "put it just after Bundle 'molokai', it works
 set background=dark
@@ -133,6 +134,9 @@ let g:ctrlp_prompt_mappings = {
 set laststatus=2
 set guifont=Monaco\ for\ Powerline
 let g:Powerline_symbols = 'fancy'
+
+"markdown
+nmap <leader>md :%!~/Projects/vim/Markdown.pl --html4tags <cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "map settings
@@ -187,7 +191,7 @@ if MySys() == 'windows'
 
   set guifont=consolas:h10
 elseif MySys() == 'mac'
-  set guifont=Monaco:h12
+  set guifont=Monaco:h11
 else
   set guifont=Monospace\ 9
 endif

@@ -33,7 +33,7 @@ My bundles here:
 1. git pull the repo
 2. vim +BundleInstall! +BundleClean +qall
 
-### Ln link
+### Ln link(dotfiles)
 
 cd ~/Projects folder
 
@@ -48,7 +48,15 @@ cd ~/Projects folder
 
 I use the zsh-syntax-highlighting plugin. So you have to install it.
 
-It is simple: 
+It is simple:
   * cd ~/.oh-my-zsh/plugins/
   * git clone git@github.com:zsh-users/zsh-syntax-highlighting.git
   * done
+
+### Markdown.pl
+
+It's a perl file to convert the markdown format text to html code.
+
+### Manaco-Powerline.otf
+
+It's the powerline vim plugin font needed, install it to your mac, then set this font at your iterm2
