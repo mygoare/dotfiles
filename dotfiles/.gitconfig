@@ -4,4 +4,6 @@
 [core]
   editor = vim
 [color]
-  ui = true
+  ui = auto
+[rerere]
+  enable = true

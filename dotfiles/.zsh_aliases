@@ -14,8 +14,8 @@ alias vim="vim -p"
 # fix terminal 中文乱码
 export LANG='zh_CN.UTF-8'
 
-alias ...="cd ../../../"
-alias ....="cd ../../../../"
+alias ...="cd ../../"
+alias ....="cd ../../../"
 alias ~="cd ~"
 alias p="cd ~/Projects"
 alias dl="cd ~/Downloads"
@@ -26,3 +26,5 @@ alias www="cd /Library/WebServer/Documents"
 alias v='vim'
 
 SAVEHIST=1000
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
