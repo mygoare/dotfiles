@@ -158,8 +158,8 @@ map <F2> :retab <CR> :w <CR>
 "jk to esc
 inoremap jk <esc>
 
-map [f $
-map [j ^
+"map [j $
+"map [f ^
 
 cmap w!! :w !sudo tee %
 
