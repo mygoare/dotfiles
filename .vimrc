@@ -68,6 +68,9 @@ set foldmethod=manual
 set scrolljump=5
 set scrolloff=3
 
+"set clipboard
+set clipboard=unnamed
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "vundle
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -94,6 +97,7 @@ Bundle 'vim-scripts/jsbeautify'
 Bundle 'tpope/vim-surround'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'hallison/vim-markdown'
+"Bundle 'fakeclip'  "does not work, so comment it
 
 "put it just after Bundle 'molokai', it works
 set background=dark
@@ -123,7 +127,7 @@ let NERDTreeQuitOnOpen = 1
 "CtrlP basic options
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_working_path_mode = 'rc'
+let g:ctrlp_working_path_mode = 'ra'
 "CtrlP open file at new tab
 let g:ctrlp_prompt_mappings = {
   \ 'AcceptSelection("e")': [],
