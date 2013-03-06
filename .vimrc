@@ -69,7 +69,7 @@ set scrolljump=5
 set scrolloff=3
 
 "set clipboard
-set clipboard=unnamed
+"set clipboard=unnamed
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "vundle
@@ -97,7 +97,7 @@ Bundle 'vim-scripts/jsbeautify'
 Bundle 'tpope/vim-surround'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'hallison/vim-markdown'
-"Bundle 'fakeclip'  "does not work, so comment it
+Bundle 'fakeclip' 
 
 "put it just after Bundle 'molokai', it works
 set background=dark
