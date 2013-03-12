@@ -1,4 +1,4 @@
-Aboutmarkdown
+About markdown
 
 ----------------------------
 
@@ -48,7 +48,7 @@ markdown中普通换行不产生<br>，而是space
 
 ---------------------------------------------------------------------------------------
 
-Aboutvim
+About vim
 
 :%s/old/new/gc
 :%s/\s\+$//g去掉行尾空格
@@ -59,7 +59,7 @@ setpaste   |   set nopaste
 
 ---------------------------------------------------------------------------------------
 
-Aboutshell
+About shell
 
 echo"export USER_NAME=mygoare" > ~/.profile      写入到~/.profile
 echo"export USER_NAME=mygoare" >> ~/.profile     追加到~/.profile
@@ -77,3 +77,9 @@ ifconfig
 ls-lt   // sort by date modified
 ls-ltr
 ls-lS   // sort by file size
+
+---------------------------------------------------------------------------------------
+
+About git
+
+git commit -a --amend
