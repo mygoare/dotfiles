@@ -1,0 +1,79 @@
+Aboutmarkdown
+
+----------------------------
+
+#h1
+##h2
+###h3
+####h4
+#####h5
+######h6
+[mygoare](http://mygoare.com'title here')
+
+![pic](http://baidu.com/logo.png"title here")
+
+锚点
+[Overview](#overview)
+<pid="overview">Overview</p>
+
+*ul1
+*ul2
+*ul3
+*ul4
+
+**itis Bold**
+
+__itis Bold too.__
+
+*itis italic*
+
+_itis italic_
+
+`codehere`
+
+1.one
+2.two
+3.three
+
+>block quote here
+>
+>block quote here
+
+
+格式化代码
+here is my pre (four spaces here)
+just the <pre> tag looks like
+
+markdown中普通换行不产生<br>，而是space
+
+---------------------------------------------------------------------------------------
+
+Aboutvim
+
+:%s/old/new/gc
+:%s/\s\+$//g去掉行尾空格
+
+setpaste   |   set nopaste
+
+:verbose map <C-n>   // 查看ctrl-n是否绑定
+
+---------------------------------------------------------------------------------------
+
+Aboutshell
+
+echo"export USER_NAME=mygoare" > ~/.profile      写入到~/.profile
+echo"export USER_NAME=mygoare" >> ~/.profile     追加到~/.profile
+
+find~ -name "my_file_name"
+
+grep"what_to_search" search_file_name1 search_file_name2 ...
+grep"content" -r ~/Documents/
+
+pbcopy< ~/.ssh/.id_rsa_pub
+
+curlifconfig.me   //get ip address
+ifconfig
+
+ls-lt   // sort by date modified
+ls-ltr
+ls-lS   // sort by file size

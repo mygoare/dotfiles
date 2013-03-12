@@ -128,11 +128,6 @@ let NERDTreeQuitOnOpen = 1
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
-"CtrlP open file at new tab
-let g:ctrlp_prompt_mappings = {
-  \ 'AcceptSelection("e")': [],
-  \ 'AcceptSelection("t")': ['<cr>', '<c-m>'],
-  \}
 
 "power line
 set laststatus=2
@@ -146,8 +141,6 @@ nmap <leader>md :%!~/Projects/vim/Markdown.pl --html4tags <cr>
 "map settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-map <C-T> :tabe<CR>
-
 "map gt & gT
 :map <C-h> gT
 :map <C-l> gt
@@ -156,8 +149,12 @@ inoremap <C-l> <Right>
 inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 
-map <F1> :tabe ~/.vimrc <CR>
-map <F2> :retab <CR> :w <CR>
+"disable highlight search
+:nnoremap <CR> :nohlsearch <CR>
+
+:map <F1> :tabe ~/.vimrc <CR>
+:map <F2> :retab <CR> :w <CR>
+:nnoremap <C-o> :tabe ~/Projects/vim/reference.txt <CR>
 
 "jk to esc
 inoremap jk <esc>
@@ -169,9 +166,6 @@ cmap w!! :w !sudo tee %
 
 "change to working dir quickly
 nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>
-
-"disable highlight search
-:nnoremap <CR> :nohlsearch<CR><CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "functions
