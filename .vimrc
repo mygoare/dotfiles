@@ -128,6 +128,11 @@ let NERDTreeQuitOnOpen = 1
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
+"Ctrlp open file in new tab
+let g:ctrlp_prompt_mappings = {
+  \ 'AcceptSelection("e")': [],
+  \ 'AcceptSelection("t")': ['<cr>', '<c-m>'],
+  \ }
 
 "power line
 set laststatus=2
@@ -152,9 +157,9 @@ inoremap <C-k> <Up>
 "disable highlight search
 :nnoremap <CR> :nohlsearch <CR>
 
-:map <F1> :tabe ~/.vimrc <CR>
+:map <F1> :sp ~/.vimrc <CR>
 :map <F2> :retab <CR> :w <CR>
-:nnoremap <C-o> :tabe ~/Projects/vim/reference.txt <CR>
+:nnoremap <C-o> :sp ~/Projects/vim/reference.txt <CR>
 
 "jk to esc
 inoremap jk <esc>
@@ -192,3 +197,12 @@ else
   set guifont=Monospace\ 9
 endif
 
+function! App()
+  call inputsave()
+  let app_name = input('')
+  call inputrestore()
+  let cmd = "! /usr/bin/open -a ". app_name
+  execute cmd
+endfunction
+
+map <leader>d :call App() <CR><CR>

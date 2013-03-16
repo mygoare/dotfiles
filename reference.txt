@@ -1,5 +1,4 @@
-About markdown
-
+ABOUT MARKDOWN
 ----------------------------
 
 #h1
@@ -8,11 +7,12 @@ About markdown
 ####h4
 #####h5
 ######h6
-[mygoare](http://mygoare.com'title here')
 
-![pic](http://baidu.com/logo.png"title here")
+[mygoare](http://mygoare.com 'title here')
 
-锚点
+![pic](http://baidu.com/logo.png "title here")
+
+# 锚点
 [Overview](#overview)
 <pid="overview">Overview</p>
 
@@ -40,29 +40,37 @@ _itis italic_
 >block quote here
 
 
-格式化代码
-here is my pre (four spaces here)
-just the <pre> tag looks like
+    # 格式化代码
+    here is my pre (four spaces here)
+    just the <pre> tag looks like
 
-markdown中普通换行不产生<br>，而是space
+# markdown中普通换行不产生<br>，而是space
 
 ---------------------------------------------------------------------------------------
-
-About vim
+ABOUT VIM
+---------------------------------------------------------------------------------------
 
 :%s/old/new/gc
-:%s/\s\+$//g去掉行尾空格
+:%s/\s\+$//g     # 去掉行尾空格
 
 setpaste   |   set nopaste
 
-:verbose map <C-n>   // 查看ctrl-n是否绑定
+:verbose map <C-n>   # 查看ctrl-n是否绑定
+
+#sourrounding.vim
+ds"
+cs"[
+yss"  # add the current line
+S"    # in the Virsual mode
+
+:e#   # edit the lasted file
 
 ---------------------------------------------------------------------------------------
+ABOUT SHELL
+---------------------------------------------------------------------------------------
 
-About shell
-
-echo"export USER_NAME=mygoare" > ~/.profile      写入到~/.profile
-echo"export USER_NAME=mygoare" >> ~/.profile     追加到~/.profile
+echo"export USER_NAME=mygoare" > ~/.profile      # 写入到~/.profile
+echo"export USER_NAME=mygoare" >> ~/.profile     # 追加到~/.profile
 
 find~ -name "my_file_name"
 
@@ -71,15 +79,59 @@ grep"content" -r ~/Documents/
 
 pbcopy< ~/.ssh/.id_rsa_pub
 
-curlifconfig.me   //get ip address
+curlifconfig.me   # get ip address
 ifconfig
 
-ls-lt   // sort by date modified
+ls-lt   # sort by date modified
 ls-ltr
-ls-lS   // sort by file size
+ls-lS   # sort by file size
 
 ---------------------------------------------------------------------------------------
-
-About git
+ABOUT GIT
+---------------------------------------------------------------------------------------
 
 git commit -a --amend
+
+# update the forked repo
+git remote add upstream git://github.com/whoever/whatever.git # Add the remote, call it "upstream"
+# Fetch all the branches of that remote into remote-tracking branches,
+# such as upstream/master:
+git fetch upstream
+git checkout master # Make sure that you're on your master branch
+# Rewrite your master branch so that any commits of yours that
+# aren't already in upstream/master are replayed on top of that
+# other branch:
+git rebase upstream/master
+git merge upstream/master
+
+git remote show origin   # show a repo's remote url
+git remote set-url origin git://new.url.here  # set repo remote url
+
+git pull = git fetch + git merge
+
+---------------------------------------------------------------------------------------
+ABOUT FTP
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+ABOUT REGEXP
+---------------------------------------------------------------------------------------
+
+I am {name}, I am {age} old, I am from {country}.
+/\{\w*\}/g
+
+---------------------------------------------------------------------------------------
+ABOUT CI
+---------------------------------------------------------------------------------------
+Class | Helper | 
+
+Controller:
+$this->load->model(model_name);  # then you can use the model functions
+$this->load->view("news/index", $data);
+$this->load->helper("url");  # load helper, then can have the url functions
+$this->load->library("form_validation");  # load class, then can $this->form_validation->run() etc.
+$this->load->driver();
+Model:
+$this->load->database();
+$this->db->get();  $this->db->get_where();   $this->db->insert();
+$this->input->post("title");  # input class auto called
