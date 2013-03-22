@@ -71,6 +71,52 @@ set scrolloff=3
 "set clipboard
 "set clipboard=unnamed
 
+set cc=80
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"map settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"map gt & gT
+:map <C-h> gT
+:map <C-l> gt
+inoremap <C-h> <Left>
+inoremap <C-l> <Right>
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+
+"disable highlight search
+:nnoremap <CR> :nohlsearch <CR>
+
+:map <F1> :sp ~/.vimrc <CR>
+:map <F2> :retab <CR> :w <CR>
+:nnoremap <C-o> :sp ~/Projects/vim/reference.txt <CR>
+
+"jk to esc
+inoremap jk <esc>
+
+"map [j $
+"map [f ^
+
+cmap w!! :w !sudo tee %
+
+"change to working dir quickly
+nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"functions
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"open app by vim
+function! App()
+  call inputsave()
+  let app_name = input('')
+  call inputrestore()
+  let cmd = "! /usr/bin/open -a ". app_name
+  execute cmd
+endfunction
+map <leader>d :call App() <CR><CR>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "vundle
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -90,20 +136,17 @@ Bundle 'tpope/vim-rails'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'altercation/vim-colors-solarized'
-Bundle 'ervandew/supertab'
-Bundle 'mygoare/snipmate.vim'
+"Bundle 'ervandew/supertab'
+"Bundle 'mygoare/snipmate.vim'
+Bundle 'mygoare/UltiSnips'
 Bundle 'groenewege/vim-less'
 Bundle 'vim-scripts/jsbeautify'
 Bundle 'tpope/vim-surround'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'hallison/vim-markdown'
-Bundle 'fakeclip' 
-
-"put it just after Bundle 'molokai', it works
-set background=dark
-let g:solarized_termcolors=256
-let g:solarized_termtrans=1
-colorscheme solarized
+Bundle 'fakeclip'
+Bundle 'EasyMotion'
+Bundle 'Tabular'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "plugins settings
@@ -140,69 +183,14 @@ set guifont=Monaco\ for\ Powerline
 let g:Powerline_symbols = 'fancy'
 
 "markdown
-nmap <leader>md :%!~/Projects/vim/Markdown.pl --html4tags <cr>
+nmap <leader>md :%!~/Projects/vim/Markdown.pl --html4tags <CR>
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"map settings
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"put it just after Bundle 'molokai', it works
+set background=dark
+let g:solarized_termcolors=256
+let g:solarized_termtrans=1
+colorscheme solarized
 
-"map gt & gT
-:map <C-h> gT
-:map <C-l> gt
-inoremap <C-h> <Left>
-inoremap <C-l> <Right>
-inoremap <C-j> <Down>
-inoremap <C-k> <Up>
+"set for easy-motion
+let g:EasyMotion_leader_key = '<Leader>'
 
-"disable highlight search
-:nnoremap <CR> :nohlsearch <CR>
-
-:map <F1> :sp ~/.vimrc <CR>
-:map <F2> :retab <CR> :w <CR>
-:nnoremap <C-o> :sp ~/Projects/vim/reference.txt <CR>
-
-"jk to esc
-inoremap jk <esc>
-
-"map [j $
-"map [f ^
-
-cmap w!! :w !sudo tee %
-
-"change to working dir quickly
-nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"functions
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-function! MySys()
-  if has("win32")
-    return "windows"
-  elseif has("mac")
-    return "mac"
-  else
-    return "linux"
-  endif
-endfunction
-
-if MySys() == 'windows'
-
-  map <F1> :e ~/_vimrc<CR>
-
-  set guifont=consolas:h10
-elseif MySys() == 'mac'
-  set guifont=Monaco:h11
-else
-  set guifont=Monospace\ 9
-endif
-
-function! App()
-  call inputsave()
-  let app_name = input('')
-  call inputrestore()
-  let cmd = "! /usr/bin/open -a ". app_name
-  execute cmd
-endfunction
-
-map <leader>d :call App() <CR><CR>

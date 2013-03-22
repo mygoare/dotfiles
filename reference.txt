@@ -123,15 +123,22 @@ I am {name}, I am {age} old, I am from {country}.
 ---------------------------------------------------------------------------------------
 ABOUT CI
 ---------------------------------------------------------------------------------------
-Class | Helper | 
+Class | Helper |
 
 Controller:
 $this->load->model(model_name);  # then you can use the model functions
+$this->model_name->model_fun();
+
 $this->load->view("news/index", $data);
 $this->load->helper("url");  # load helper, then can have the url functions
 $this->load->library("form_validation");  # load class, then can $this->form_validation->run() etc.
 $this->load->driver();
 Model:
+parent::__construct();
 $this->load->database();
-$this->db->get();  $this->db->get_where();   $this->db->insert();
+$this->db->get(); $this->db->insert();
 $this->input->post("title");  # input class auto called
+$this->db->get_where();
+$this->db->where(); $this->db->update();
+
+$this->db->query(); # 执行裸SQL
