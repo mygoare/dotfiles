@@ -142,3 +142,13 @@ $this->db->get_where();
 $this->db->where(); $this->db->update();
 
 $this->db->query(); # 执行裸SQL
+
+
+---------------------------------------------------------------------------------------
+SOME TOOL KITS
+---------------------------------------------------------------------------------------
+less    lessc demo.less > demo.css
+yuicompressor    yuicompressor demo.js > demo.min.js (based on java, I have add alias)
+
+csslint    csslint sytle.css > problem.txt
+prefixr    prefix -i input.css -o outupt.css

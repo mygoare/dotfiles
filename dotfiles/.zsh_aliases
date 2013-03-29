@@ -23,10 +23,15 @@ alias dt="cd ~/Desktop"
 alias dc="cd ~/Documents"
 alias www="cd /Library/WebServer/Documents"
 
+alias lsa='ls -lahtr'
+alias l='ls -lA1tr'
+alias ll='ls -ltr'
+alias la='ls -lAtr'
+
 alias v='vim'
 
 SAVEHIST=1000
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-alias yuicompress='java -jar ~/Projects/Kit/yuicompressor/build/yuicompressor-2.4.8pre.jar'
+#alias yuicompress='java -jar ~/Projects/Kit/yuicompressor/build/yuicompressor-2.4.8pre.jar'

@@ -2,6 +2,12 @@
 "vimrc basic settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" auto reload .vimrc
+"autocmd! bufwritepost .vimrc source %
+
+"paste mode toggle
+set pastetoggle=<F3>
+
 "set transparency=5
 syntax on
 set number
@@ -78,8 +84,8 @@ set cc=80
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 "map gt & gT
-:map <C-h> gT
-:map <C-l> gt
+map <C-h> gT
+map <C-l> gt
 inoremap <C-h> <Left>
 inoremap <C-l> <Right>
 inoremap <C-j> <Down>
