@@ -35,3 +35,4 @@ SAVEHIST=1000
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 #alias yuicompress='java -jar ~/Projects/Kit/yuicompressor/build/yuicompressor-2.4.8pre.jar'
+alias htmlcompress='java -jar /Users/mygoare/Project/Kit/htmlcompressor-1.5.3.jar'
