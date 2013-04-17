@@ -5,5 +5,16 @@
   editor = vim
 [color]
   ui = auto
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
 [rerere]
   enable = true
+[alias]
+  gcaa = commit -a --amend

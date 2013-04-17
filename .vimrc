@@ -94,9 +94,9 @@ inoremap <C-k> <Up>
 "disable highlight search
 :nnoremap <CR> :nohlsearch <CR>
 
-:map <F1> :sp ~/.vimrc <CR>
+:map <F1> :vnew ~/.vimrc <CR>
 :map <F2> :retab <CR> :w <CR>
-:nnoremap <C-o> :sp ~/Projects/vim/reference.txt <CR>
+:nnoremap <C-o> :vnew ~/Projects/vim/reference.txt <CR>
 
 "jk to esc
 inoremap jk <esc>

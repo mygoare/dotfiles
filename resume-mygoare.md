@@ -15,7 +15,8 @@
 
 **网站：**
 
-* [blog](http://mygoare.com)
+* [blog](http://mygoare.com)：基于emlog做的一套皮肤simy，杂记
 * [云U盘](http://upan.us)：响应式布局，ie7以上浏览器，支持手机平板小屏幕，ajax站，注重用户体验，修改过几个版本才得出当前的交互方式；基于ci；注重细节
+* [demo](http://173.252.197.181/test/)：html5/css3/browser compatibility(ie7,8,9)/responsive response design/code readability
 
 _本简历用markdown书写_
