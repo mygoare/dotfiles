@@ -16,5 +16,3 @@
   remote = green
 [rerere]
   enable = true
-[alias]
-  gcaa = commit -a --amend

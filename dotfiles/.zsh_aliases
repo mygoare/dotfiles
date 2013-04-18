@@ -30,6 +30,9 @@ alias la='ls -lAtr'
 
 alias v='vim'
 
+#git
+alias gcaa='git commit -a --amend'
+
 SAVEHIST=1000
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
