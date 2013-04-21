@@ -15,13 +15,15 @@ My bundles here:
     * Bundle 'scrooloose/nerdcommenter'
     * Bundle 'scrooloose/nerdtree'
     * Bundle 'altercation/vim-colors-solarized'
-    * Bundle 'ervandew/supertab'
-    * Bundle 'mygoare/snipmate.vim'
+    * Bundle 'mygoare/UltiSnips'
     * Bundle 'groenewege/vim-less'
     * Bundle 'vim-scripts/jsbeautify'
     * Bundle 'tpope/vim-surround'
     * Bundle 'Lokaltog/vim-powerline'
     * Bundle 'hallison/vim-markdown'
+    * Bundle 'fakeclip'
+    * Bundle 'EasyMotion'
+    * Bundle 'Tabular'
 
 ### How to install
 
@@ -44,7 +46,7 @@ My bundles here:
     ln -sf ~/Projects/vim/dotfiles/.zsh_aliases ~/.zsh_aliases
     ln -sf ~/Projects/vim/dotfiles/.zsh_profile ~/.zsh_profile
     ln -sf ~/Projects/vim/dotfiles/.zshrc ~/.zshrc
-    cp ~/Projects/vim/dotfiles/mygoare.zsh-theme ~/.oh-my-zsh/themes/
+    cp ~/Projects/vim/dotfiles/mygoare.zsh-theme ~/.oh-my-zsh/custom/
 
 ### About oh-my-zsh
 
@@ -52,7 +54,7 @@ I use the [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-high
 
 It is simple:
 
-    cd ~/.oh-my-zsh/plugins/
+    cd ~/.oh-my-zsh/custom/plugins/
     git clone git@github.com:zsh-users/zsh-syntax-highlighting.git
 
 ### Markdown.pl
