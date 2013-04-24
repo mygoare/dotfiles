@@ -153,6 +153,7 @@ Bundle 'hallison/vim-markdown'
 Bundle 'fakeclip'
 Bundle 'EasyMotion'
 Bundle 'Tabular'
+Bundle 'kchmck/vim-coffee-script'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "plugins settings

@@ -2,6 +2,7 @@ alias grep='grep --color=auto'
 alias pg='ps aux | grep'
 
 alias sshu='ssh mygoare@172.16.85.129'
+alias sshvps='ssh mygoare@173.252.197.181'
 
 #C-r
 bindkey "^R" history-incremental-search-backward
