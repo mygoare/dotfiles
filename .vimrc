@@ -96,7 +96,7 @@ inoremap <C-k> <Up>
 
 :map <F1> :vnew ~/.vimrc <CR>
 :map <F2> :retab <CR> :w <CR>
-:nnoremap <C-o> :vnew ~/Projects/vim/reference.txt <CR>
+":nnoremap <C-o> :vnew ~/Projects/vim/reference.txt <CR>
 
 "jk to esc
 inoremap jk <esc>
@@ -201,3 +201,10 @@ colorscheme solarized
 "set for easy-motion
 let g:EasyMotion_leader_key = '<Leader>'
 
+"taglist
+let Tlist_Show_One_File = 1
+let Tlist_Exit_OnlyWindow = 1
+let Tlist_Use_Right_Window = 1
+let Tlist_Close_On_Select = 1 "select one tag close taglist auto
+let Tlist_GainFocus_On_ToggleOpen = 1
+nnoremap <C-o> :TlistToggle<CR>
