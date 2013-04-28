@@ -154,6 +154,8 @@ Bundle 'fakeclip'
 Bundle 'EasyMotion'
 Bundle 'Tabular'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'taglist.vim'
+Bundle 'bufexplorer.zip'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "plugins settings
