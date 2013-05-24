@@ -123,6 +123,19 @@ function! App()
 endfunction
 map <leader>d :call App() <CR><CR>
 
+"compile run fun
+function! CompileRun()
+  exec "w"
+  if &filetype == 'ruby'
+    exec "!ruby %"
+  elseif &filetype == 'python'
+    exec "!python %"
+  else
+    exec "!open %"
+  endif
+endfunction
+noremap <leader>b :call CompileRun()<CR>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "vundle
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -151,11 +164,12 @@ Bundle 'tpope/vim-surround'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'hallison/vim-markdown'
 Bundle 'fakeclip'
-Bundle 'EasyMotion'
+"Bundle 'EasyMotion'
 Bundle 'Tabular'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'taglist.vim'
 Bundle 'bufexplorer.zip'
+Bundle 'krisajenkins/vim-clojure-sql'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "plugins settings
@@ -209,4 +223,6 @@ let Tlist_Exit_OnlyWindow = 1
 let Tlist_Use_Right_Window = 1
 let Tlist_Close_On_Select = 1 "select one tag close taglist auto
 let Tlist_GainFocus_On_ToggleOpen = 1
+let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
 nnoremap <C-o> :TlistToggle<CR>
+

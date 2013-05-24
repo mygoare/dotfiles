@@ -36,7 +36,8 @@ alias gcaa='git commit -a --amend'
 
 SAVEHIST=1000
 
-PATH=$PATH:$HOME/.rvm/bin:/usr/local/mysql/bin
+PATH=/usr/local/bin:/usr/local/mysql/bin:$HOME/.rvm/bin:$PATH
+
 
 #alias yuicompress='java -jar ~/Projects/Kit/yuicompressor/build/yuicompressor-2.4.8pre.jar'
 alias htmlcompress='java -jar /Users/mygoare/Project/Kit/htmlcompressor-1.5.3.jar'
