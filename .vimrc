@@ -5,6 +5,8 @@
 " auto reload .vimrc
 "autocmd! bufwritepost .vimrc source %
 
+set spell
+
 "paste mode toggle
 set pastetoggle=<F3>
 
@@ -134,7 +136,7 @@ function! CompileRun()
     exec "!open %"
   endif
 endfunction
-noremap <leader>b :call CompileRun()<CR>
+"noremap <leader>b :call CompileRun()<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "vundle
@@ -164,12 +166,14 @@ Bundle 'tpope/vim-surround'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'hallison/vim-markdown'
 Bundle 'fakeclip'
-"Bundle 'EasyMotion'
+Bundle 'EasyMotion'
 Bundle 'Tabular'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'taglist.vim'
-Bundle 'bufexplorer.zip'
+"Bundle 'bufexplorer.zip'
 Bundle 'krisajenkins/vim-clojure-sql'
+Bundle 'scrooloose/syntastic'
+Bundle 'neocomplcache'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "plugins settings
@@ -226,3 +230,4 @@ let Tlist_GainFocus_On_ToggleOpen = 1
 let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
 nnoremap <C-o> :TlistToggle<CR>
 
+let g:neocomplcache_enable_at_startup = 1 
