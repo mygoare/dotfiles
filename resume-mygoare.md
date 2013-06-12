@@ -7,7 +7,7 @@
 * [Blog](http://mygoare.com)
 * 半个设计师
 
-**近期的一些项目：**
+**近期的一些项目：**皆为个人独立完成
 
 1.  [vim](https://github.com/mygoare/.vim)  ->  折腾的vim及dot files配置托管
 1.  [Chrome插件](https://github.com/mygoare/fussExt)  ->  用于快速给github issue页附加图片
