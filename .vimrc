@@ -174,6 +174,7 @@ Bundle 'taglist.vim'
 Bundle 'krisajenkins/vim-clojure-sql'
 Bundle 'scrooloose/syntastic'
 Bundle 'neocomplcache'
+Bundle 'nathanaelkane/vim-indent-guides'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "plugins settings
@@ -230,4 +231,9 @@ let Tlist_GainFocus_On_ToggleOpen = 1
 let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
 nnoremap <C-o> :TlistToggle<CR>
 
-let g:neocomplcache_enable_at_startup = 1 
+"neocomplcache settings
+let g:neocomplcache_enable_at_startup = 1
+
+"vim-indent-guides settings
+let g:indent_guides_start_level=2
+let g:indent_guides_guide_size=1
