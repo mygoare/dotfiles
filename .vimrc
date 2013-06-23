@@ -175,6 +175,7 @@ Bundle 'krisajenkins/vim-clojure-sql'
 Bundle 'scrooloose/syntastic'
 Bundle 'neocomplcache'
 Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'majutsushi/tagbar'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "plugins settings
