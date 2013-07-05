@@ -176,6 +176,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'neocomplcache'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'majutsushi/tagbar'
+Bundle 'digitaltoad/vim-jade'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "plugins settings
