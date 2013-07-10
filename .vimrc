@@ -149,10 +149,10 @@ Bundle 'gmarik/vundle'
 "My bundles here:
 Bundle 'tpope/vim-pathogen'
 Bundle 'mattn/zencoding-vim'
-Bundle 'ctrlp.vim'
+Bundle 'kien/ctrlp.vim'
 Bundle 'Townk/vim-autoclose'
-Bundle 'matchit.zip'
-Bundle 'auto_mkdir'
+Bundle 'tsaleh/vim-matchit'
+Bundle 'vim-scripts/auto_mkdir'
 Bundle 'tpope/vim-rails'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
@@ -165,11 +165,11 @@ Bundle 'vim-scripts/jsbeautify'
 Bundle 'tpope/vim-surround'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'hallison/vim-markdown'
-Bundle 'fakeclip'
-Bundle 'EasyMotion'
-Bundle 'Tabular'
+Bundle 'kana/vim-fakeclip'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'godlygeek/tabular'
 Bundle 'kchmck/vim-coffee-script'
-Bundle 'taglist.vim'
+Bundle 'vim-scripts/taglist.vim'
 "Bundle 'bufexplorer.zip'
 Bundle 'krisajenkins/vim-clojure-sql'
 Bundle 'scrooloose/syntastic'
@@ -177,6 +177,12 @@ Bundle 'neocomplcache'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'majutsushi/tagbar'
 Bundle 'digitaltoad/vim-jade'
+Bundle 'pangloss/vim-javascript'
+Bundle 'wavded/vim-stylus'
+Bundle 'sleistner/vim-jshint'
+Bundle 'guileen/vim-node'
+Bundle 'jiangmiao/auto-pairs'
+Bundle 'tpope/vim-fugitive'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "plugins settings
@@ -231,7 +237,7 @@ let Tlist_Use_Right_Window = 1
 let Tlist_Close_On_Select = 1 "select one tag close taglist auto
 let Tlist_GainFocus_On_ToggleOpen = 1
 let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
-nnoremap <C-o> :TlistToggle<CR>
+"nnoremap <C-o> :TlistToggle<CR>
 
 "neocomplcache settings
 let g:neocomplcache_enable_at_startup = 1
