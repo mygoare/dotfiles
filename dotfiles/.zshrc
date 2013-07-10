@@ -42,3 +42,9 @@ source $ZSH/oh-my-zsh.sh
 if [ -f ~/.zsh_aliases ]; then
   . ~/.zsh_aliases
 fi
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+if [ -f ~/.bash_profile ]; then
+  . ~/.bash_profile
+fi
