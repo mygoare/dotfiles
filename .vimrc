@@ -179,10 +179,12 @@ Bundle 'majutsushi/tagbar'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'pangloss/vim-javascript'
 Bundle 'wavded/vim-stylus'
-Bundle 'sleistner/vim-jshint'
+"Bundle 'sleistner/vim-jshint'
 Bundle 'guileen/vim-node'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'tpope/vim-fugitive'
+Bundle 'vim-scripts/express.vim'
+Bundle 'AndrewRadev/splitjoin.vim'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "plugins settings
