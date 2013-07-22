@@ -36,8 +36,18 @@ alias gcaa='git commit -a --amend'
 
 SAVEHIST=1000
 
-PATH=/usr/local/bin:/usr/local/mysql/bin:$HOME/.rvm/bin:$PATH
-
-
 #alias yuicompress='java -jar ~/Projects/Kit/yuicompressor/build/yuicompressor-2.4.8pre.jar'
 alias htmlcompress='java -jar /Users/mygoare/Project/Kit/htmlcompressor-1.5.3.jar'
+
+
+#SET PATH
+PATH=/usr/local/bin:/usr/local/mysql/bin:$HOME/.rvm/bin:$PATH
+
+#path about ruby, rails, rvm, nodejs, nvm etc.
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+[[ -s "$HOME/.nvm/nvm.sh" ]] && . "$HOME/.nvm/nvm.sh" # This loads NVM
+
+export NODE_PATH=$NVM_DIR/$(nvm_ls current)/lib/node_modules # export $NODE_PATH
