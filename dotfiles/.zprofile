@@ -6,3 +6,6 @@
 [[ -s "$HOME/.nvm/nvm.sh" ]] && . "$HOME/.nvm/nvm.sh" # This loads NVM
 
 export NODE_PATH=$NVM_DIR/$(nvm_ls current)/lib/node_modules # export $NODE_PATH
+
+#set for autojump
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
