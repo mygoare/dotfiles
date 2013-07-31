@@ -136,8 +136,12 @@ function! CompileRun()
     exec "!open %"
   endif
 endfunction
-"noremap <leader>b :call CompileRun()<CR>
+noremap <leader>o :call CompileRun()<CR>
 
+"function! search()
+  "exec "!grep "
+"endfunction
+"map <leader>f :call search() <CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "vundle
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -179,7 +183,6 @@ Bundle 'majutsushi/tagbar'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'pangloss/vim-javascript'
 Bundle 'wavded/vim-stylus'
-"Bundle 'sleistner/vim-jshint'
 Bundle 'guileen/vim-node'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'tpope/vim-fugitive'
@@ -250,3 +253,6 @@ let g:indent_guides_guide_size=1
 
 "solve conficts <C-h>
 let g:AutoPairsMapBS=0
+
+"syntastic location list settings
+let g:syntastic_always_populate_loc_list=1
