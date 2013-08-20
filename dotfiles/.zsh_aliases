@@ -41,4 +41,4 @@ alias htmlcompress='java -jar /Users/mygoare/Project/Kit/htmlcompressor-1.5.3.ja
 
 
 #SET PATH
-#PATH=/usr/local/bin:/usr/local/mysql/bin:$HOME/.rvm/bin:$PATH
+PATH=/usr/local/bin:$PATH
