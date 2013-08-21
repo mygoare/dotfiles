@@ -82,21 +82,27 @@ set scrolloff=3
 set cc=80
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"map settings
+"mapping settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 "map gt & gT
 map <C-h> gT
 map <C-l> gt
+
+map <right> :bn!<cr>
+map <left> :bp!<cr>
+
 inoremap <C-h> <Left>
 inoremap <C-l> <Right>
 inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 
 "disable highlight search
-:nnoremap <CR> :nohlsearch <CR>
+":nnoremap <CR> :nohlsearch <CR>
 
-:map <F1> :vnew ~/.vimrc <CR>
+nnoremap Y y$
+
+:map <Leader>v :vnew ~/.vimrc <CR>
 :map <F2> :retab <CR> :w <CR>
 ":nnoremap <C-o> :vnew ~/Projects/vim/reference.txt <CR>
 
@@ -132,6 +138,8 @@ function! CompileRun()
     exec "!ruby %"
   elseif &filetype == 'python'
     exec "!python %"
+  elseif &filetype == 'coffee'
+    exec "!coffee %"
   else
     exec "!open %"
   endif
@@ -152,7 +160,7 @@ Bundle 'gmarik/vundle'
 
 "My bundles here:
 Bundle 'tpope/vim-pathogen'
-Bundle 'mattn/zencoding-vim'
+Bundle 'mattn/emmet-vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Townk/vim-autoclose'
 Bundle 'tsaleh/vim-matchit'
@@ -164,6 +172,7 @@ Bundle 'altercation/vim-colors-solarized'
 "Bundle 'ervandew/supertab'
 "Bundle 'mygoare/snipmate.vim'
 Bundle 'mygoare/UltiSnips'
+"Bundle 'SirVer/ultisnips'
 Bundle 'groenewege/vim-less'
 Bundle 'vim-scripts/jsbeautify'
 Bundle 'tpope/vim-surround'
@@ -178,6 +187,7 @@ Bundle 'vim-scripts/taglist.vim'
 Bundle 'krisajenkins/vim-clojure-sql'
 Bundle 'scrooloose/syntastic'
 Bundle 'neocomplcache'
+"Bundle 'Valloric/YouCompleteMe'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'majutsushi/tagbar'
 Bundle 'digitaltoad/vim-jade'
@@ -188,13 +198,14 @@ Bundle 'jiangmiao/auto-pairs'
 Bundle 'tpope/vim-fugitive'
 Bundle 'vim-scripts/express.vim'
 Bundle 'AndrewRadev/splitjoin.vim'
+Bundle 'mileszs/ack.vim'
+"Bundle 'vim-scripts/Conque-Shell'
+Bundle 'tpope/vim-haml'
+Bundle 'airblade/vim-gitgutter'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "plugins settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-"zencoding-vim ctrl-e set
-let g:user_zen_expandabbr_key = '<c-e>'
 
 "pathogen
 call pathogen#infect()
@@ -247,11 +258,11 @@ let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
 "neocomplcache settings
 let g:neocomplcache_enable_at_startup = 1
 
-"vim-indent-guides settings
+"vim-indent-guides settings  <Leader>ig
 let g:indent_guides_start_level=2
 let g:indent_guides_guide_size=1
 
-"solve conficts <C-h>
+"solve conficts <C-h> with auto-pairs pluign
 let g:AutoPairsMapBS=0
 
 "syntastic location list settings

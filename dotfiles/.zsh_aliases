@@ -41,4 +41,5 @@ alias htmlcompress='java -jar /Users/mygoare/Project/Kit/htmlcompressor-1.5.3.ja
 
 
 #SET PATH
+#installed by homebrew will be ln -s to /usr/local/bin/ dir
 PATH=/usr/local/bin:$PATH
