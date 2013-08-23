@@ -1,9 +1,6 @@
 alias grep='grep --color=auto'
 alias pg='ps aux | grep'
 
-alias sshu='ssh mygoare@172.16.85.129'
-alias sshvps='ssh mygoare@173.252.197.181'
-
 #C-r
 bindkey "^R" history-incremental-search-backward
 
@@ -30,6 +27,7 @@ alias ll='ls -ltr'
 alias la='ls -lAtr'
 
 alias v='vim'
+alias vi='vim'
 
 #git
 alias gcaa='git commit -a --amend'
@@ -37,10 +35,6 @@ alias glg='git log --stat'
 alias glgg='git log --graph'
 
 SAVEHIST=1000
-
-#alias yuicompress='java -jar ~/Projects/Kit/yuicompressor/build/yuicompressor-2.4.8pre.jar'
-alias htmlcompress='java -jar /Users/mygoare/Project/Kit/htmlcompressor-1.5.3.jar'
-
 
 #SET PATH
 #installed by homebrew will be ln -s to /usr/local/bin/ dir
