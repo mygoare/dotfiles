@@ -33,6 +33,8 @@ alias v='vim'
 
 #git
 alias gcaa='git commit -a --amend'
+alias glg='git log --stat'
+alias glgg='git log --graph'
 
 SAVEHIST=1000
 
