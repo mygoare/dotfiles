@@ -33,6 +33,7 @@ alias vi='vim'
 alias glg='git log --stat'
 alias glgg='git log --graph'
 alias glo='git log --oneline --graph --decorate'
+alias gs='git stash list'
 
 SAVEHIST=1000
 
