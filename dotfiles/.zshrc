@@ -39,6 +39,3 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 # aliases zsh
-if [ -f ~/.zsh_aliases ]; then
-  . ~/.zsh_aliases
-fi

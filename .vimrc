@@ -30,7 +30,11 @@ set cindent
 set showmatch
 
 "deal with tab
-set tabstop=2 shiftwidth=2 expandtab
+set tabstop=2 shiftwidth=2
+
+"expand tab to space
+set expandtab
+
 set list
 set listchars=tab:-\ ,trail:\ ,extends:#,nbsp:\
 
@@ -86,8 +90,10 @@ set cc=80
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 "map gt & gT
-map <C-h> gT
-map <C-l> gt
+map <C-h> <C-w><Left>
+map <C-l> <C-w><Right>
+map <C-k> <C-w><Up>
+map <C-j> <C-w><Down>
 
 map <right> :bn!<cr>
 map <left> :bp!<cr>
@@ -178,7 +184,6 @@ Bundle 'vim-scripts/jsbeautify'
 Bundle 'tpope/vim-surround'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'hallison/vim-markdown'
-Bundle 'kana/vim-fakeclip'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'godlygeek/tabular'
 Bundle 'kchmck/vim-coffee-script'
@@ -199,7 +204,6 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'vim-scripts/express.vim'
 Bundle 'AndrewRadev/splitjoin.vim'
 Bundle 'mileszs/ack.vim'
-"Bundle 'vim-scripts/Conque-Shell'
 Bundle 'tpope/vim-haml'
 Bundle 'airblade/vim-gitgutter'
 
@@ -217,17 +221,17 @@ call pathogen#infect()
 map <C-N> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
 
 "NERDTree open file auto close
-let NERDTreeQuitOnOpen = 1
+"let NERDTreeQuitOnOpen = 1
 
 "CtrlP basic options
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
 "Ctrlp open file in new tab
-let g:ctrlp_prompt_mappings = {
-  \ 'AcceptSelection("e")': [],
-  \ 'AcceptSelection("t")': ['<cr>', '<c-m>'],
-  \ }
+"let g:ctrlp_prompt_mappings = {
+  "\ 'AcceptSelection("e")': [],
+  "\ 'AcceptSelection("t")': ['<cr>', '<c-m>'],
+  "\ }
 
 "power line
 set laststatus=2
