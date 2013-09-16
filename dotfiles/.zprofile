@@ -1,10 +1,7 @@
 ######  PATH  ########
 # path about ruby, rails, rvm, nodejs, nvm etc.
-# Add RVM to PATH for scripting
-PATH=$PATH:$HOME/.rvm/bin
 
-# Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # This loads NVM
 [[ -s "$HOME/.nvm/nvm.sh" ]] && . "$HOME/.nvm/nvm.sh"
@@ -58,3 +55,5 @@ SAVEHIST=1000
 ######  OTHERS  ########
 # set for autojump
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

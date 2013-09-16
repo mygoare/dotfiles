@@ -5,7 +5,7 @@
 " auto reload .vimrc
 "autocmd! bufwritepost .vimrc source %
 
-set spell
+"set spell
 
 "paste mode toggle
 set pastetoggle=<F3>
