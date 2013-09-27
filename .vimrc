@@ -193,7 +193,6 @@ Bundle 'krisajenkins/vim-clojure-sql'
 Bundle 'scrooloose/syntastic'
 Bundle 'neocomplcache'
 "Bundle 'Valloric/YouCompleteMe'
-Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'majutsushi/tagbar'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'pangloss/vim-javascript'
@@ -206,6 +205,7 @@ Bundle 'AndrewRadev/splitjoin.vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'tpope/vim-haml'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'Yggdroot/indentLine'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "plugins settings
@@ -228,10 +228,7 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
 "Ctrlp open file in new tab
-"let g:ctrlp_prompt_mappings = {
-  "\ 'AcceptSelection("e")': [],
-  "\ 'AcceptSelection("t")': ['<cr>', '<c-m>'],
-  "\ }
+"use <c-t> <c-x> <x-v> open in new tab & split
 
 "power line
 set laststatus=2
@@ -261,10 +258,6 @@ let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
 
 "neocomplcache settings
 let g:neocomplcache_enable_at_startup = 1
-
-"vim-indent-guides settings  <Leader>ig
-let g:indent_guides_start_level=2
-let g:indent_guides_guide_size=1
 
 "solve conficts <C-h> with auto-pairs pluign
 let g:AutoPairsMapBS=0
