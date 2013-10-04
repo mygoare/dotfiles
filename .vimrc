@@ -165,7 +165,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 "My bundles here:
-Bundle 'tpope/vim-pathogen'
+"Bundle 'tpope/vim-pathogen'
 Bundle 'mattn/emmet-vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Townk/vim-autoclose'
@@ -179,7 +179,7 @@ Bundle 'altercation/vim-colors-solarized'
 "Bundle 'mygoare/snipmate.vim'
 Bundle 'mygoare/UltiSnips'
 "Bundle 'SirVer/ultisnips'
-Bundle 'groenewege/vim-less'
+"Bundle 'groenewege/vim-less'
 Bundle 'vim-scripts/jsbeautify'
 Bundle 'tpope/vim-surround'
 Bundle 'Lokaltog/vim-powerline'
@@ -187,29 +187,29 @@ Bundle 'hallison/vim-markdown'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'godlygeek/tabular'
 Bundle 'kchmck/vim-coffee-script'
-Bundle 'vim-scripts/taglist.vim'
+"Bundle 'vim-scripts/taglist.vim'
 "Bundle 'bufexplorer.zip'
 Bundle 'scrooloose/syntastic'
 Bundle 'neocomplcache'
 "Bundle 'Valloric/YouCompleteMe'
-Bundle 'majutsushi/tagbar'
+"Bundle 'majutsushi/tagbar'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'pangloss/vim-javascript'
 Bundle 'guileen/vim-node'
 Bundle 'jiangmiao/auto-pairs'
-Bundle 'tpope/vim-fugitive'
+"Bundle 'tpope/vim-fugitive'
 Bundle 'vim-scripts/express.vim'
-Bundle 'AndrewRadev/splitjoin.vim'
+"Bundle 'AndrewRadev/splitjoin.vim'
 Bundle 'mileszs/ack.vim'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'Yggdroot/indentLine'
+"Bundle 'airblade/vim-gitgutter'
+"Bundle 'Yggdroot/indentLine'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "plugins settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 "pathogen
-call pathogen#infect()
+"call pathogen#infect()
 
 "for less to auto compile
 "autocmd BufWritePost *.less exe '!lessc ' . shellescape(expand('<afile>')) . ' ' . shellescape(expand('<afile>:r')) . '.css' 
