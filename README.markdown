@@ -64,3 +64,5 @@ It's a perl file to convert the [markdown](http://daringfireball.net/projects/ma
 ### Manaco-Powerline.otf
 
 It's the powerline vim plugin font needed, install it to your mac, then set this font at your iterm2
+
+### I am using `Source Code Pro` as my programming font
