@@ -42,10 +42,11 @@ My bundles here:
     cd ~/Projects folder
 
     ln -sf ~/Projects/vim/dotfiles/.gitconfig ~/.gitconfig
+    ln -sf ~/Projects/vim/dotfiles/.jshintrc ~/.jshintrc
     ln -sf ~/Projects/vim/dotfiles/.tmux.conf ~/.tmux.conf
     ln -sf ~/Projects/vim/dotfiles/.zsh_aliases ~/.zsh_aliases
     ln -sf ~/Projects/vim/dotfiles/.zshrc ~/.zshrc
-    cp ~/Projects/vim/dotfiles/mygoare.zsh-theme ~/.oh-my-zsh/custom/
+    ln -sf ~/Projects/vim/dotfiles/.zprofile ~/.zprofile
 
 ### About oh-my-zsh
 
