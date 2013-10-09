@@ -9,4 +9,3 @@ if [ ! -d ~/.oh-my-zsh ]; then
 fi
 /usr/bin/env zsh
 source ~/.zshrc
-
