@@ -44,7 +44,6 @@ My bundles here:
     ln -sf ~/Projects/vim/dotfiles/.gitconfig ~/.gitconfig
     ln -sf ~/Projects/vim/dotfiles/.jshintrc ~/.jshintrc
     ln -sf ~/Projects/vim/dotfiles/.tmux.conf ~/.tmux.conf
-    ln -sf ~/Projects/vim/dotfiles/.zsh_aliases ~/.zsh_aliases
     ln -sf ~/Projects/vim/dotfiles/.zshrc ~/.zshrc
     ln -sf ~/Projects/vim/dotfiles/.zprofile ~/.zprofile
 
