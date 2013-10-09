@@ -237,9 +237,11 @@ nmap <leader>md :%!~/Projects/vim/Markdown.pl --html4tags <CR>
 
 "put it just after Bundle 'molokai', it works
 set background=dark
-let g:solarized_termcolors=256
-let g:solarized_termtrans=1
-colorscheme solarized
+if filereadable(expand("~/.vim/bundle/vim-colors-solarized/colors/solarized.vim"))
+  let g:solarized_termcolors=256
+  let g:solarized_termtrans=1
+  colorscheme solarized
+endif
 
 "set for easy-motion
 let g:EasyMotion_leader_key = '<Leader>'

@@ -27,7 +27,7 @@ My bundles here:
 
 ### How to install
 
-    1. git clone git@github.com:mygoare/.vim.git ~/Projects/vim/
+    1. git clone https://github.com/mygoare/.vim.git ~/Projects/vim/
     2. ln -sf ~/Projects/vim/.vimrc ~/.vimrc
     3. git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
     4. Launch vim, run :BundleInstall (or vim +BundleInstall! +BundleClean +qall for CLI lovers)
