@@ -24,8 +24,12 @@ fi
 vim -e +BundleInstall! +qall
 
 #add oh-my-zsh
+echo "\033[0;34mChange shell to zsh...\033[0m"
+chsh -s `which zsh`
+
 echo "\033[0;34mCloning Oh-My-Zsh...\033[0m"
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+source ~/.zshrc
 
 for var in .gitconfig .jshintrc .tmux.conf .zshrc .zprofile; do
   [ -f $HOME/$var ] && mv $HOME/$var $HOME/.pre$var
