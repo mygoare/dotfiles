@@ -1,13 +1,14 @@
 git --version 1>/dev/null 2>&1 || { echo "\033[0;31mgit not installed\033[0m"; exit 0; }
-zsh 1>/dev/null 2>&1 || { echo "\033[0;31mzsh not installed\033[0m"; exit 0; }
 
 if [ ! -d ~/Projects/vim/ ]; then
   mkdir -p ~/Projects/vim/
   echo "\033[0;34mCloning Mygoare Vim...\033[0m"
   git clone https://github.com/mygoare/.vim.git ~/Projects/vim/
-#else
-  #echo "\033[0;33mYou have installed my vim config.\033[0m"
-  #exit 0;
+else
+#  echo "\033[0;33mYou have installed my vim config.\033[0m"
+#  exit 0;
+  cd ~/Projects/vim/
+  git pull
 fi
 
 if [ -f ~/.vimrc ]; then
@@ -22,18 +23,7 @@ else
   echo "\033[0;33mYou have installed vundle.\033[0m"
 fi
 
-vim -e +BundleInstall! +qall
-
-#add oh-my-zsh
-echo "\033[0;34mChange shell to zsh...\033[0m"
-chsh -s `which zsh`
-
-if [ ! -d ~/.oh-my-zsh ]; then
-  echo "\033[0;34mCloning Oh-My-Zsh...\033[0m"
-  git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-fi
-/usr/bin/env zsh
-source ~/.zshrc
+vim -e +BundleInstall +qall
 
 for var in .gitconfig .jshintrc .tmux.conf .zshrc .zprofile; do
   [ -f $HOME/$var ] && mv $HOME/$var $HOME/.pre$var
