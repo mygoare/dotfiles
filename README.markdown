@@ -1,51 +1,9 @@
 ![jiong](http://github.com/mygoare/.vim/raw/master/jiong.png)
 _______
 
-### It contains follows:
-
-My bundles here:
-
-    * Bundle 'tpope/vim-pathogen'
-    * Bundle 'mattn/zencoding-vim'
-    * Bundle 'ctrlp.vim'
-    * Bundle 'Townk/vim-autoclose'
-    * Bundle 'matchit.zip'
-    * Bundle 'auto_mkdir'
-    * Bundle 'tpope/vim-rails'
-    * Bundle 'scrooloose/nerdcommenter'
-    * Bundle 'scrooloose/nerdtree'
-    * Bundle 'altercation/vim-colors-solarized'
-    * Bundle 'mygoare/UltiSnips'
-    * Bundle 'groenewege/vim-less'
-    * Bundle 'vim-scripts/jsbeautify'
-    * Bundle 'tpope/vim-surround'
-    * Bundle 'Lokaltog/vim-powerline'
-    * Bundle 'hallison/vim-markdown'
-    * Bundle 'fakeclip'
-    * Bundle 'EasyMotion'
-    * Bundle 'Tabular'
-
 ### How to install
 
-    1. git clone https://github.com/mygoare/.vim.git ~/Projects/vim/
-    2. ln -sf ~/Projects/vim/.vimrc ~/.vimrc
-    3. git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-    4. Launch vim, run :BundleInstall (or vim +BundleInstall! +BundleClean +qall for CLI lovers)
-
-### How to update
-
-    1. git pull the repo
-    2. vim +BundleInstall! +BundleClean +qall
-
-### Ln link(dotfiles)
-
-    cd ~/Projects folder
-
-    ln -sf ~/Projects/vim/dotfiles/.gitconfig ~/.gitconfig
-    ln -sf ~/Projects/vim/dotfiles/.jshintrc ~/.jshintrc
-    ln -sf ~/Projects/vim/dotfiles/.tmux.conf ~/.tmux.conf
-    ln -sf ~/Projects/vim/dotfiles/.zshrc ~/.zshrc
-    ln -sf ~/Projects/vim/dotfiles/.zprofile ~/.zprofile
+    `curl https://raw.github.com/mygoare/.vim/master/kit/install.sh | sh && vim +BundleInstall! +qall`
 
 ### About oh-my-zsh
 
