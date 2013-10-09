@@ -23,8 +23,6 @@ else
   echo "\033[0;33mYou have installed vundle.\033[0m"
 fi
 
-/usr/bin/env vim -e +BundleInstall +qall
-
 for var in .gitconfig .jshintrc .tmux.conf .zshrc .zprofile; do
   [ -f $HOME/$var ] && mv $HOME/$var $HOME/.pre$var
   ln -sf ~/Projects/vim/dotfiles/$var $HOME/$var
