@@ -5,7 +5,7 @@ else
   exit 0;
 fi
 
-git --version 1>/dev/null 2>&1 || { echo "\033[0;31mgit not installed"; exit 0\033[0m; }
+git --version 1>/dev/null 2>&1 || { echo "\033[0;31mgit not installed\033[0m"; exit 0; }
 
 git clone https://github.com/mygoare/.vim.git ~/Projects/vim/
 if [ -f ~/.vimrc ]; then
@@ -24,3 +24,5 @@ for var in ".gitconfig" ".jshintrc" ".tmux.conf" ".zshrc" ".zprofile"; do
   [ -f $HOME"/"$var ] && mv $HOME"/"$var $HOME"/.pre"$var
   ln -sf "~/Projects/vim/dotfiles/"$var $HOME"/"$var
 done
+
+echo "\033[0;32mCongratulation! It Success Installed!\033[0m"
