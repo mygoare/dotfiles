@@ -54,7 +54,7 @@ SAVEHIST=1000
 
 ######  OTHERS  ########
 # set for autojump
-if brew -v >/dev/null; then
+if brew -v >/dev/null 2>&1; then
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 fi
 
