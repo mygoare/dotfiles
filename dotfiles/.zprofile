@@ -54,6 +54,8 @@ SAVEHIST=1000
 
 ######  OTHERS  ########
 # set for autojump
+if brew -v >/dev/null; then
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+fi
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
