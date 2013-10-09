@@ -2,7 +2,7 @@ if [ ! -d ~/Projects/vim/ ]; then
   mkdir -p ~/Projects/vim/
 fi
 
-git -v 1>/dev/null 2>&1 || { echo "git not installed"; exit 0; }
+git --version 1>/dev/null 2>&1 || { echo "git not installed"; exit 0; }
 
 git clone git@github.com:mygoare/.vim.git ~/Projects/vim/
 if [ -f ~/.vimrc ]; then
