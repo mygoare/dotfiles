@@ -18,7 +18,7 @@ if [ ! -d ~/.vim/bundle/vundle/ ]; then
 else
   echo "\033[0;33mYou have installed vundle.\033[0m"
 fi
-vim +BundleInstall! +qall
+vim +BundleInstall +qall
 
 if [ -f ~/.gitconfig ]; then
   mv ~/.gitconfig ~/.pre-gitconfig
