@@ -1,15 +1,27 @@
 if [ ! -d ~/Projects/vim/ ]; then
   mkdir -p ~/Projects/vim/
+else
+  echo "\033[0;33]You have installed my vim config.\033[0m]"
+  exit 0;
 fi
 
-git --version 1>/dev/null 2>&1 || { echo "git not installed"; exit 0; }
+git --version 1>/dev/null 2>&1 || { echo "\033[0;31]git not installed"; exit 0\033[0m]; }
 
 git clone https://github.com/mygoare/.vim.git ~/Projects/vim/
 if [ -f ~/.vimrc ]; then
   mv ~/.vimrc ~/.pre-vimrc
 fi
 ln -sf ~/Projects/vim/.vimrc ~/.vimrc
-git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+
+if [ ! -d ~/.vim/bundle/vundle/ ]; then
+  git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+else
+  echo "
+    \033[0;33]
+    \nYou have installed vundle\n
+    \033[0m]
+    "
+fi
 vim +BundleInstall! +qall
 
 if [ -f ~/.gitconfig ]; then
