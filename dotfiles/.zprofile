@@ -4,7 +4,7 @@
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # This loads NVM
-[[ -s "$HOME/.nvm/nvm.sh" ]] && . "$HOME/.nvm/nvm.sh"
+[ -d $HOME/.nvm/ ] && { [[ -s "$HOME/.nvm/nvm.sh" ]] && . "$HOME/.nvm/nvm.sh" }
 
 # export $NODE_PATH
 export NODE_PATH=$NVM_DIR/$(nvm_ls current)/lib/node_modules
