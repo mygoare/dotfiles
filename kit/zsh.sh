@@ -8,5 +8,4 @@ fi
 echo "\033[0;34mChange shell to zsh...\033[0m"
 chsh -s `which zsh`
 
-/usr/bin/env zsh
-source ~/.zshrc
+echo "\033[0;32mDone, Reopen you terminal please...\033[0m"
