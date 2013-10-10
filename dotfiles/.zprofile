@@ -7,7 +7,7 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [ -d $HOME/.nvm/ ] && { [[ -s "$HOME/.nvm/nvm.sh" ]] && . "$HOME/.nvm/nvm.sh" }
 
 # export $NODE_PATH
-export NODE_PATH=$NVM_DIR/$(nvm_ls current)/lib/node_modules
+[ -d $HOME/.nvm/ ] && { export NODE_PATH=$NVM_DIR/$(nvm_ls current)/lib/node_modules }
 
 # installed by homebrew will be ln -s to /usr/local/bin/ dir
 PATH=/usr/local/bin:$PATH
