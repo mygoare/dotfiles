@@ -59,3 +59,8 @@ if brew -v >/dev/null 2>&1; then
 fi
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+#https://gist.github.com/nicholascloud/5372443#comment-815301
+function npmls() {
+  npm ls "$@" | grep "^[└├]" | sed "s/─┬/──/g"
+}
