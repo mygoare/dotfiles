@@ -68,7 +68,7 @@ if has("win32")
 else
   set fileencoding=utf-8
 endif
-set fileencodings=utf-8,gbk,ucs-bom,cp936
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 
 "set terminal shell 256 colors
 set t_Co=256
