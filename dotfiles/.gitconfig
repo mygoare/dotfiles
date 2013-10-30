@@ -16,7 +16,5 @@
   remote = green
 [rerere]
   enable = true
-[push]
-  default = simple
 [merge]
   tool = vimdiff
