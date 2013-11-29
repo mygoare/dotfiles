@@ -199,6 +199,8 @@ Bundle 'vim-scripts/express.vim'
 Bundle 'mileszs/ack.vim'
 "Bundle 'airblade/vim-gitgutter'
 "Bundle 'Yggdroot/indentLine'
+Bundle 'mattn/gist-vim'
+Bundle 'mattn/webapi-vim'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "plugins settings
@@ -212,11 +214,13 @@ Bundle 'mileszs/ack.vim'
 
 "NERDTree
 map <C-N> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
+let NERDTreeShowHidden = 1
 
 "NERDTree open file auto close
 "let NERDTreeQuitOnOpen = 1
 
 "CtrlP basic options
+let g:ctrlp_show_hidden = 1
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'

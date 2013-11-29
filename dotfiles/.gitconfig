@@ -18,3 +18,5 @@
   enable = true
 [merge]
   tool = vimdiff
+[github]
+	user = mygoare
