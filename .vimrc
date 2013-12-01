@@ -187,6 +187,8 @@ Bundle 'scrooloose/syntastic'
 Bundle 'neocomplcache'
 "ack
 Bundle 'mileszs/ack.vim'
+"enter to indent
+Bundle 'andersoncustodio/vim-enter-indent'
 
 "push code to github gist
 Bundle 'mattn/gist-vim'
