@@ -64,3 +64,7 @@ fi
 function npmls() {
   npm ls "$@" | grep "^[└├]" | sed "s/─┬/──/g"
 }
+
+#set for Android ADT & java_home
+export PATH=${PATH}:$HOME/Development/adt-bundle/sdk/platform-tools:$HOME/Development/adt-bundle/sdk/tools
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_10.jdk/Contents/Home
