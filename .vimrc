@@ -41,8 +41,6 @@ set listchars=tab:-\ ,trail:\ ,extends:#,nbsp:\
 set nowrap
 "set autochdir
 
-filetype plugin indent on
-
 set ruler
 set showcmd
 
@@ -81,6 +79,9 @@ set scrolloff=3
 
 set cc=80
 
+"set at vim command mode the command autocomplete has menu list show
+set wildmenu
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "mapping settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -110,6 +111,8 @@ nnoremap Y y$
 
 "jk to esc
 inoremap jk <esc>
+
+map zz :q<CR>
 
 "map [j $
 "map [f ^
@@ -156,58 +159,64 @@ noremap <leader>o :call CompileRun()<CR>
 "vundle
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "set for Vundle
+filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
 
 "My bundles here:
-"Bundle 'tpope/vim-pathogen'
 Bundle 'mattn/emmet-vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Townk/vim-autoclose'
 Bundle 'tsaleh/vim-matchit'
 Bundle 'vim-scripts/auto_mkdir'
 Bundle 'tpope/vim-rails'
+"quick add comment
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'altercation/vim-colors-solarized'
-"Bundle 'ervandew/supertab'
-"Bundle 'mygoare/snipmate.vim'
-Bundle 'mygoare/UltiSnips'
-"Bundle 'SirVer/ultisnips'
-"Bundle 'groenewege/vim-less'
-Bundle 'vim-scripts/jsbeautify'
+Bundle 'SirVer/ultisnips'
 Bundle 'tpope/vim-surround'
 Bundle 'Lokaltog/vim-powerline'
-Bundle 'hallison/vim-markdown'
+"easymotion
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'godlygeek/tabular'
-Bundle 'kchmck/vim-coffee-script'
-"Bundle 'vim-scripts/taglist.vim'
-"Bundle 'bufexplorer.zip'
+"check the syntax
 Bundle 'scrooloose/syntastic'
+"autocomplete
 Bundle 'neocomplcache'
-"Bundle 'Valloric/YouCompleteMe'
-"Bundle 'majutsushi/tagbar'
-Bundle 'digitaltoad/vim-jade'
-Bundle 'pangloss/vim-javascript'
-Bundle 'guileen/vim-node'
-Bundle 'jiangmiao/auto-pairs'
-"Bundle 'tpope/vim-fugitive'
-Bundle 'vim-scripts/express.vim'
-"Bundle 'AndrewRadev/splitjoin.vim'
+"ack
 Bundle 'mileszs/ack.vim'
-"Bundle 'airblade/vim-gitgutter'
-"Bundle 'Yggdroot/indentLine'
+
+"push code to github gist
 Bundle 'mattn/gist-vim'
 Bundle 'mattn/webapi-vim'
+
+"for highlighting
+Bundle 'hallison/vim-markdown'
+Bundle 'kchmck/vim-coffee-script'
+
+filetype plugin indent on
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "plugins settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-"pathogen
-"call pathogen#infect()
+"emmet setting from http://www.vim.org/scripts/script.php?script_id=2981
+let g:user_emmet_settings = {
+\  'indentation' : '  ',
+\  'perl' : {
+\    'aliases' : {
+\      'req' : 'require '
+\    },
+\    'snippets' : {
+\      'use' : "use strict\nuse warnings\n\n",
+\      'warn' : "warn \"|\";",
+\    }
+\  }
+\}
+let g:user_emmet_expandabbr_key = '<c-e>'
+let g:use_emmet_complete_tag = 1
 
 "for less to auto compile
 "autocmd BufWritePost *.less exe '!lessc ' . shellescape(expand('<afile>')) . ' ' . shellescape(expand('<afile>:r')) . '.css' 
@@ -224,7 +233,6 @@ let g:ctrlp_show_hidden = 1
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
-"Ctrlp open file in new tab
 "use <c-t> <c-x> <x-v> open in new tab & split
 
 "power line
@@ -246,20 +254,10 @@ endif
 "set for easy-motion
 let g:EasyMotion_leader_key = '<Leader>'
 
-"taglist
-let Tlist_Show_One_File = 1
-let Tlist_Exit_OnlyWindow = 1
-let Tlist_Use_Right_Window = 1
-let Tlist_Close_On_Select = 1 "select one tag close taglist auto
-let Tlist_GainFocus_On_ToggleOpen = 1
-let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
-"nnoremap <C-o> :TlistToggle<CR>
-
 "neocomplcache settings
 let g:neocomplcache_enable_at_startup = 1
 
-"solve conficts <C-h> with auto-pairs pluign
-let g:AutoPairsMapBS=0
-
 "syntastic location list settings
 let g:syntastic_always_populate_loc_list=1
+
+"ultisnips setting
