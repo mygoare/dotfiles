@@ -9,8 +9,12 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 # export $NODE_PATH
 [ -d $HOME/.nvm/ ] && { export NODE_PATH=$NVM_DIR/$(nvm_ls current)/lib/node_modules }
 
-# installed by homebrew will be ln -s to /usr/local/bin/ dir
+# installed by homebrew will be ln -s to /usr/local/bin/ dir ( before /usr/bin/  )
 PATH=/usr/local/bin:$PATH
+
+#set for Android ADT & java_home
+PATH=$HOME/Development/adt-bundle/sdk/platform-tools:$HOME/Development/adt-bundle/sdk/tools:$PATH
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_10.jdk/Contents/Home
 
 ######  ALIAS  ########
 alias grep='grep --color=auto'
@@ -64,7 +68,3 @@ fi
 function npmls() {
   npm ls "$@" | grep "^[└├]" | sed "s/─┬/──/g"
 }
-
-#set for Android ADT & java_home
-export PATH=${PATH}:$HOME/Development/adt-bundle/sdk/platform-tools:$HOME/Development/adt-bundle/sdk/tools
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_10.jdk/Contents/Home

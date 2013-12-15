@@ -17,8 +17,6 @@ set number
 "default leader is '\'
 let mapleader = ','
 
-set helplang=cn
-
 set nobackup
 set noswapfile
 
@@ -150,6 +148,9 @@ function! CompileRun()
   endif
 endfunction
 noremap <leader>o :call CompileRun()<CR>
+
+"insert datetime
+map <F4> :r!date +\%F\ \%T<CR>
 
 "function! search()
   "exec "!grep "
