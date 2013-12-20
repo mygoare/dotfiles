@@ -189,7 +189,7 @@ Bundle 'godlygeek/tabular'
 "check the syntax
 Bundle 'scrooloose/syntastic'
 "autocomplete
-let has_lua = system('if [ `which lua` ]; then echo "1"; fi')
+let has_lua = system('if [ `vim --version | grep +lua` ]; then echo "1"; fi')
 if has_lua
   Bundle 'Shougo/neocomplete.vim'
 
