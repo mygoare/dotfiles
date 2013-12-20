@@ -80,6 +80,9 @@ set cc=80
 "set at vim command mode the command autocomplete has menu list show
 set wildmenu
 
+"switch files with <ctrl-o> <ctrl-i>
+set hidden
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "mapping settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -104,6 +107,7 @@ inoremap <C-k> <Up>
 nnoremap Y y$
 
 :map <Leader>v :vnew ~/.vimrc <CR>
+:map <Leader>u :vnew ~/.vim/bundle/ultisnips/UltiSnips/ <CR>
 :map <F2> :retab <CR> :w <CR>
 ":nnoremap <C-o> :vnew ~/Projects/vim/reference.txt <CR>
 
@@ -185,7 +189,16 @@ Bundle 'godlygeek/tabular'
 "check the syntax
 Bundle 'scrooloose/syntastic'
 "autocomplete
-Bundle 'neocomplcache'
+let has_lua = system('if [ `which lua` ]; then echo "1"; fi')
+if has_lua
+  Bundle 'Shougo/neocomplete.vim'
+
+  let g:neocomplete#enable_at_startup = 1
+else
+  Bundle 'Shougo/neocomplcache.vim'
+
+  let g:neocomplcache_enable_at_startup = 1
+endif
 "ack
 Bundle 'mileszs/ack.vim'
 "enter to indent
@@ -256,9 +269,6 @@ endif
 
 "set for easy-motion
 let g:EasyMotion_leader_key = '<Leader>'
-
-"neocomplcache settings
-let g:neocomplcache_enable_at_startup = 1
 
 "syntastic location list settings
 let g:syntastic_always_populate_loc_list=1
