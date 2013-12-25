@@ -1,4 +1,4 @@
-###How to use
+###What you need
 
 You need:
 
@@ -10,9 +10,21 @@ You need:
 
     Chrome Proxy Setting Extension
 
+* SwitchyOptions.bak
+
+    It is the file I backup the basic SwitchySharp Options settings. It usually can be used to initialize the settings if you are new to SwitchySharp.
+
+    If you are already using SwitchySharp, you can ignore it.
+
 ###What it is
 
 It is a rules list of switchysharp extension. Something similar to [autoproxy-gfwlist](https://code.google.com/p/autoproxy-gfwlist/), but it is my own summary.
+
+###How to use
+
+The URL is: https://raw.github.com/mygoare/.vim/master/GFW/SwitchyRules.ssrl
+
+![fill switchy rules list url](./fill_switchyrules.png)
 
 ###How to contribute
 
