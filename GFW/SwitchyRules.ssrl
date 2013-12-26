@@ -1,5 +1,5 @@
 ; Summary: Proxy Switchy! Exported Rule List
-; Date: 12/25/2013
+; Date: 12/26/2013
 ; Website: http://bit.ly/proxyswitchy
 
 #BEGIN
@@ -463,6 +463,13 @@ http://*.ytimg.com/*
 *://osl.com/*
 *://*.imgur.com/*
 *://imgur.com/*
+*://*.wikibooks.org/*
+*://*.wikimedia.org/*
+*://*.linkedin.com/*
+*://*.electronicsnews.com.au/*
+*://*.cloudflare.com/*
+*://*.licdn.com/*
+*://*.mesheven.com/*
 
 [regexp]
 
