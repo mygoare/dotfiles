@@ -211,6 +211,8 @@ Bundle 'mattn/webapi-vim'
 "for highlighting
 Bundle 'hallison/vim-markdown'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'digitaltoad/vim-jade'
+Bundle 'groenewege/vim-less'
 
 filetype plugin indent on
 
