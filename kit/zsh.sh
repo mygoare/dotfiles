@@ -6,6 +6,6 @@ if [ ! -d ~/.oh-my-zsh ]; then
 fi
 
 echo "\033[0;34mChange shell to zsh...\033[0m"
-sudo chsh -s `which zsh`
+chsh -s `which zsh`
 
 echo "\033[0;32mDone, Reopen you terminal please...\033[0m"
