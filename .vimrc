@@ -80,45 +80,48 @@ set cc=80
 "set at vim command mode the command autocomplete has menu list show
 set wildmenu
 
-"switch files with <ctrl-o> <ctrl-i>
+"switch between buffers with unsaved change
 set hidden
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "mapping settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-"map gt & gT
+"map switch split windows
 map <C-h> <C-w><Left>
 map <C-l> <C-w><Right>
 map <C-k> <C-w><Up>
 map <C-j> <C-w><Down>
 
+"buffer switch
 map <right> :bn!<cr>
 map <left> :bp!<cr>
 
+"cursor move under insert mode
 inoremap <C-h> <Left>
 inoremap <C-l> <Right>
 inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 
 "disable highlight search
-":nnoremap <CR> :nohlsearch <CR>
+:nnoremap <CR> :nohlsearch <CR>
 
 nnoremap Y y$
 
 :map <Leader>v :vnew ~/.vimrc <CR>
 :map <Leader>u :vnew ~/.vim/bundle/ultisnips/UltiSnips/ <CR>
 :map <F2> :retab <CR> :w <CR>
-":nnoremap <C-o> :vnew ~/Projects/vim/reference.txt <CR>
 
 "jk to esc
 inoremap jk <esc>
 
+"close file quickly
 map zz :q<CR>
 
 "map [j $
 "map [f ^
 
+"call sudo
 cmap w!! :w !sudo tee %
 
 "change to working dir quickly
@@ -214,6 +217,10 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'groenewege/vim-less'
 Bundle 'pangloss/vim-javascript'
+Bundle 'othree/html5.vim'
+
+"vim buffers
+Bundle 'vim-scripts/bufexplorer.zip'
 
 filetype plugin indent on
 
@@ -241,16 +248,16 @@ let g:use_emmet_complete_tag = 1
 "autocmd BufWritePost *.less exe '!lessc ' . shellescape(expand('<afile>')) . ' ' . shellescape(expand('<afile>:r')) . '.css' 
 
 "NERDTree
-map <C-N> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
+map <C-N> :NERDTreeCWD<CR>
 let NERDTreeShowHidden = 1
 
 "NERDTree open file auto close
-"let NERDTreeQuitOnOpen = 1
+let NERDTreeQuitOnOpen = 1
 
 "CtrlP basic options
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_cmd = 'CtrlPCurWD'
 let g:ctrlp_working_path_mode = 'ra'
 "use <c-t> <c-x> <x-v> open in new tab & split
 
@@ -277,3 +284,6 @@ let g:EasyMotion_leader_key = '<Leader>'
 let g:syntastic_always_populate_loc_list=1
 
 "ultisnips setting
+
+"BufExplorer setting
+"let g:bufExplorerUseCurrentWindow=1
