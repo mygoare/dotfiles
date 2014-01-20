@@ -213,6 +213,7 @@ Bundle 'hallison/vim-markdown'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'groenewege/vim-less'
+Bundle 'pangloss/vim-javascript'
 
 filetype plugin indent on
 
