@@ -98,10 +98,10 @@ map <right> :bn!<cr>
 map <left> :bp!<cr>
 
 "cursor move under insert mode
-inoremap <C-h> <Left>
-inoremap <C-l> <Right>
-inoremap <C-j> <Down>
-inoremap <C-k> <Up>
+inoremap <C-b> <Left>
+inoremap <C-f> <Right>
+inoremap <C-n> <Down>
+inoremap <C-p> <Up>
 
 "disable highlight search
 :nnoremap <CR> :nohlsearch <CR>
