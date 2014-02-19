@@ -476,6 +476,7 @@ http://*.ytimg.com/*
 *://dimplejs.org/*
 *://christopheviau.com/*
 *://letteringjs.com/*
+*://*.global.ssl.fastly.net/*
 
 [regexp]
 
