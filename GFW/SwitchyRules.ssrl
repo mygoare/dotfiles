@@ -459,6 +459,31 @@
 *://*.knockmeout.net/*
 *://*.eventbrite.com/*
 *://*.facebook.net/*
+*://socket.io/*
+*://lineandpixel.com/*
+*://laravel.com/*
+*://*.astrill.com/*
+*://*.godaddy.com/*
+*://*.knockmeout.net/*
+*://*.eventbrite.com/*
+*://*.facebook.net/*
+*://cn.uncyclopedia.wikia.com/*
+*://500px.com/*
+*://*.basho.com/*
+*://*.cloudfront.net/*
+*://*.fastly.net/*
+*://*.mongohq.com/*
+*://*.getclicky.com/*
+*://*.visual.ly/*
+*://codepen.io/*
+*://*.eyecon.ro/*
+*://*.websanova.com/*
+*://copypastecharacter.com/*
+*://*.500px.org/*
+*://*.500px.com/*
+*://tutsplus.com/*
+*://*.engadget.com/*
+*://levo.us/*
 
 [regexp]
 
