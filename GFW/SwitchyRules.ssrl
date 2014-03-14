@@ -488,6 +488,10 @@
 *://appleuser.com/*
 *://*.huluim.com/*
 *://*.hulu.com/*
+*://*.quoracdn.net/*
+*://*.insnw.net/*
+*://*.quora.com/*
+*://quora.com/*
 
 [regexp]
 
