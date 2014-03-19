@@ -14,7 +14,6 @@ PATH=/usr/local/bin:$PATH
 
 #set for Android ADT & java_home
 PATH=$HOME/Development/adt-bundle/sdk/platform-tools:$HOME/Development/adt-bundle/sdk/tools:$PATH
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_10.jdk/Contents/Home
 
 ######  ALIAS  ########
 alias grep='grep --color=auto'
