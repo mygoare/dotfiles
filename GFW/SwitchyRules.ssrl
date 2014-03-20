@@ -172,7 +172,6 @@
 *://37signals.com/*
 *://*.news.gov.hk/*
 *://*.cnpythoner.com/*
-*://*.quora.com/*
 *://*.dfbjbpx.com/*
 *://*.2shared.com/*
 *://*.spotify.com/*
@@ -454,6 +453,7 @@
 *://*.getclicky.com/*
 *://*.visual.ly/*
 *://codepen.io/*
+*://*.codepen.io/*
 *://*.eyecon.ro/*
 *://*.websanova.com/*
 *://copypastecharacter.com/*
@@ -476,7 +476,6 @@
 *://*.mongohq.com/*
 *://*.getclicky.com/*
 *://*.visual.ly/*
-*://codepen.io/*
 *://*.eyecon.ro/*
 *://*.websanova.com/*
 *://copypastecharacter.com/*
@@ -489,10 +488,11 @@
 *://appleuser.com/*
 *://*.huluim.com/*
 *://*.hulu.com/*
-*://*.quoracdn.net/*
 *://*.insnw.net/*
+*://*.quoracdn.net/*
 *://*.quora.com/*
 *://quora.com/*
+*://swipejs.com/*
 
 [regexp]
 
