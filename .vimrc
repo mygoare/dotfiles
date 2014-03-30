@@ -28,7 +28,8 @@ set cindent
 set showmatch
 
 "deal with tab
-set tabstop=2 shiftwidth=2
+"set tabstop=2 shiftwidth=2
+set tabstop=4 shiftwidth=4
 
 "expand tab to space
 set expandtab
@@ -175,8 +176,13 @@ Bundle 'gmarik/vundle'
 "My bundles here:
 Bundle 'mattn/emmet-vim'
 Bundle 'kien/ctrlp.vim'
-Bundle 'Townk/vim-autoclose'
-Bundle 'tsaleh/vim-matchit'
+
+"Bundle 'Townk/vim-autoclose'
+"enter to indent
+Bundle 'andersoncustodio/vim-enter-indent'
+Bundle 'jiangmiao/auto-pairs'
+
+Bundle 'matchit.zip'
 Bundle 'vim-scripts/auto_mkdir'
 Bundle 'tpope/vim-rails'
 "quick add comment
@@ -204,8 +210,6 @@ else
 endif
 "ack
 Bundle 'mileszs/ack.vim'
-"enter to indent
-Bundle 'andersoncustodio/vim-enter-indent'
 
 "push code to github gist
 Bundle 'mattn/gist-vim'
@@ -229,20 +233,21 @@ filetype plugin indent on
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 "emmet setting from http://www.vim.org/scripts/script.php?script_id=2981
-let g:user_emmet_settings = {
-\  'indentation' : '  ',
-\  'perl' : {
-\    'aliases' : {
-\      'req' : 'require '
-\    },
-\    'snippets' : {
-\      'use' : "use strict\nuse warnings\n\n",
-\      'warn' : "warn \"|\";",
-\    }
-\  }
-\}
-let g:user_emmet_expandabbr_key = '<c-e>'
-let g:use_emmet_complete_tag = 1
+"let g:user_emmet_settings = {
+"\  'indentation' : '  ',
+"\  'perl' : {
+"\    'aliases' : {
+"\      'req' : 'require '
+"\    },
+"\    'snippets' : {
+"\      'use' : "use strict\nuse warnings\n\n",
+"\      'warn' : "warn \"|\";",
+"\    }
+"\  }
+"\}
+"let g:user_emmet_expandabbr_key = '<c-e>'
+"let g:use_emmet_complete_tag = 1
+let g:user_emmet_mode='inv'
 
 "for less to auto compile
 "autocmd BufWritePost *.less exe '!lessc ' . shellescape(expand('<afile>')) . ' ' . shellescape(expand('<afile>:r')) . '.css' 
@@ -287,3 +292,5 @@ let g:syntastic_always_populate_loc_list=1
 
 "BufExplorer setting
 "let g:bufExplorerUseCurrentWindow=1
+
+nnoremap ,bf :buffers<CR>:b<Space>
