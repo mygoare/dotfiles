@@ -12,7 +12,7 @@ You need:
 
 * SwitchyOptions.bak
 
-    url: https://raw.github.com/mygoare/.vim/master/GFW/SwitchyOptions.bak, You can import it through this url without download.
+    url: https://raw.githubusercontent.com/mygoare/.vim/master/GFW/SwitchyOptions.bak, You can import it through this url without download.
 
     It is the file I backup the basic SwitchySharp Options settings. It usually can be used to initialize the settings if you are new to SwitchySharp.
 
