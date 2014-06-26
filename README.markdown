@@ -4,6 +4,12 @@ _______
 ### How to install
 
     curl https://raw.github.com/mygoare/.vim/master/kit/install.sh | sh && vim +BundleInstall! +qall
+    
+##### After that, find `kit` folder
+
+`sh install.sh` to install vundle and link dotfiles.
+
+`sh zsh.sh` to install oh-my-zsh and switch to zsh.
 
 ### About oh-my-zsh
 
