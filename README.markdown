@@ -3,7 +3,7 @@ _______
 
 ### How to install
 
-    curl https://raw.github.com/mygoare/.vim/master/kit/install.sh | sh && vim +BundleInstall! +qall
+    curl https://raw.github.com/mygoare/.vim/master/kit/install.sh | bash && vim +BundleInstall! +qall
     
 ##### After that, find `kit` folder
 
