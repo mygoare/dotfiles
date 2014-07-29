@@ -1,9 +1,9 @@
-![jiong](http://github.com/mygoare/.vim/raw/master/jiong.png)
+![jiong](https://raw.githubusercontent.com/mygoare/.vim/master/jiong.png)
 _______
 
 ### How to install
 
-    curl https://raw.github.com/mygoare/.vim/master/kit/install.sh | sh && vim +BundleInstall! +qall
+    curl https://raw.githubusercontent.com/mygoare/.vim/master/kit/install.sh | bash && vim +BundleInstall! +qall
     
 ##### After that, find `kit` folder
 
