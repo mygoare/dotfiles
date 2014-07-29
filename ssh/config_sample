@@ -1,3 +1,8 @@
+/*
+ *  Put this file to ~/.ssh if you have multiple git accounts
+ *  Remove these comments
+**/
+
 Host github
   HostName  github.com
   IdentityFile ~/.ssh/id_rsa.github
