@@ -1,4 +1,4 @@
-![jiong](http://github.com/mygoare/.vim/raw/master/jiong.png)
+![jiong](https://raw.githubusercontent.com/mygoare/.vim/master/jiong.png)
 _______
 
 ### How to install
