@@ -1,6 +1,9 @@
 ![jiong](https://raw.githubusercontent.com/mygoare/.vim/master/jiong.png)
 _______
 
+You'd better to use vim compiled with `+clipboard`.
+Read [here](http://vimcasts.org/blog/2013/11/getting-vim-with-clipboard-support/) for more.
+
 ### How to install
 
     curl https://raw.githubusercontent.com/mygoare/.vim/master/kit/install.sh | bash && vim +BundleInstall! +qall
