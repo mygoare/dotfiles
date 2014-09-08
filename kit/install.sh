@@ -3,7 +3,7 @@ git --version 1>/dev/null 2>&1 || { echo "\033[0;31mgit not installed\033[0m"; e
 if [ ! -d ~/Projects/vim/ ]; then
   mkdir -p ~/Projects/vim/
   echo "\033[0;34mCloning Mygoare Vim...\033[0m"
-  git clone https://github.com/mygoare/.vim.git ~/Projects/vim/
+  git clone https://github.com/mygoare/dotfiles.git ~/Projects/vim/
 else
 #  echo "\033[0;33mYou have installed my vim config.\033[0m"
 #  exit 0;
