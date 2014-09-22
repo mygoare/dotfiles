@@ -109,8 +109,7 @@ inoremap <C-p> <Up>
 
 nnoremap Y y$
 
-:map <Leader>v :vnew ~/.vimrc <CR>
-:map <Leader>u :vnew ~/.vim/bundle/ultisnips/UltiSnips/ <CR>
+":map <Leader>v :vnew ~/.vimrc <CR>
 :map <F2> :retab <CR> :w <CR>
 
 "jk to esc
@@ -179,17 +178,17 @@ Bundle 'kien/ctrlp.vim'
 
 "Bundle 'Townk/vim-autoclose'
 "enter to indent
-Bundle 'andersoncustodio/vim-enter-indent'
+"Bundle 'andersoncustodio/vim-enter-indent'
 Bundle 'jiangmiao/auto-pairs'
 
 Bundle 'matchit.zip'
-Bundle 'vim-scripts/auto_mkdir'
-Bundle 'tpope/vim-rails'
+"Bundle 'vim-scripts/auto_mkdir'
+"Bundle 'tpope/vim-rails'
 "quick add comment
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'altercation/vim-colors-solarized'
-Bundle 'SirVer/ultisnips'
+"Bundle 'SirVer/ultisnips'
 Bundle 'tpope/vim-surround'
 Bundle 'Lokaltog/vim-powerline'
 "easymotion
@@ -197,6 +196,7 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'godlygeek/tabular'
 "check the syntax
 Bundle 'scrooloose/syntastic'
+
 "autocomplete
 let has_lua = system('if [ `vim --version | grep +lua` ]; then echo "1"; fi')
 if has_lua
@@ -208,12 +208,13 @@ else
 
   let g:neocomplcache_enable_at_startup = 1
 endif
+
 "ack
 Bundle 'mileszs/ack.vim'
 
 "push code to github gist
-Bundle 'mattn/gist-vim'
-Bundle 'mattn/webapi-vim'
+"Bundle 'mattn/gist-vim'
+"Bundle 'mattn/webapi-vim'
 
 "for highlighting
 Bundle 'hallison/vim-markdown'
@@ -221,7 +222,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'groenewege/vim-less'
 Bundle 'pangloss/vim-javascript'
-Bundle 'othree/html5.vim'
+"Bundle 'othree/html5.vim'
 
 "vim buffers
 Bundle 'vim-scripts/bufexplorer.zip'
@@ -293,4 +294,4 @@ let g:syntastic_always_populate_loc_list=1
 "BufExplorer setting
 "let g:bufExplorerUseCurrentWindow=1
 
-nnoremap ,bf :buffers<CR>:b<Space>
+"nnoremap ,bf :buffers<CR>:b<Space>
