@@ -11,6 +11,7 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # installed by homebrew will be ln -s to /usr/local/bin/ dir ( before /usr/bin/  )
 PATH=/usr/local/bin:$PATH
+PATH=/usr/local/sbin:$PATH
 
 #set for Android ADT & java_home
 PATH=$HOME/Development/adt-bundle/sdk/platform-tools:$HOME/Development/adt-bundle/sdk/tools:$PATH
