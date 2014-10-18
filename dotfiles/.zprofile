@@ -54,6 +54,9 @@ alias glgg='git log --graph'
 alias glo='git log --oneline --graph --decorate'
 alias gs='git stash'
 
+# alias to nw
+alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
+
 SAVEHIST=1000
 
 ######  OTHERS  ########
