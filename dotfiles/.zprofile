@@ -71,5 +71,3 @@ fi
 function npmls() {
   npm ls "$@" | grep "^[└├]" | sed "s/─┬/──/g"
 }
-
-alias createServer='python -m SimpleHTTPServer'
