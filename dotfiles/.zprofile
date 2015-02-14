@@ -1,7 +1,8 @@
 ######  PATH  ########
 # path about ruby, rails, rvm, nodejs, nvm etc.
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # This loads NVM
 [ -d $HOME/.nvm/ ] && { [[ -s "$HOME/.nvm/nvm.sh" ]] && . "$HOME/.nvm/nvm.sh" }
@@ -64,8 +65,6 @@ SAVEHIST=1000
 if brew -v >/dev/null 2>&1; then
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 fi
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 #https://gist.github.com/nicholascloud/5372443#comment-815301
 function npmls() {
