@@ -1,11 +1,10 @@
 {
-    "theme": "Flatland Dark.sublime-theme",
     "color_scheme": "Packages/Theme - Flatland/Flatland Monokai.tmTheme",
-    "flatland_sidebar_tree_xsmall" : true,
+    "fade_fold_buttons": false,
+    "flatland_sidebar_tree_xsmall": true,
     "flatland_square_tabs": true,
     "font_face": "Source Code Pro",
-    "fade_fold_buttons": false,
-    "font_size": 12,
+    "font_size": 13,
     "highlight_line": true,
     "highlight_modified_tabs": true,
     "ignored_packages":
@@ -19,7 +18,9 @@
     ],
     "scorll_past_end": true,
     "show_minimap": false,
+    "theme": "Flatland Dark.sublime-theme",
     "translate_tabs_to_spaces": true,
     "trim_trailing_white_space_on_save": true,
-    "word_wrap": true
+    "word_wrap": true,
+    "find_selected_text": true
 }

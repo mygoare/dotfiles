@@ -67,3 +67,8 @@ fi
 function npmls() {
   npm ls "$@" | grep "^[└├]" | sed "s/─┬/──/g"
 }
+
+alias cnpm="npm --registry=https://registry.npm.taobao.org \
+    --cache=$HOME/.npm/.cache/cnpm \
+    --disturl=https://npm.taobao.org/dist \
+    --userconfig=$HOME/.cnpmrc"
