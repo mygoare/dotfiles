@@ -14,9 +14,6 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 PATH=/usr/local/bin:$PATH
 PATH=/usr/local/sbin:$PATH
 
-#set for Android ADT & java_home
-PATH=$HOME/Development/adt-bundle/sdk/platform-tools:$HOME/Development/adt-bundle/sdk/tools:$PATH
-
 #set for php composer
 PATH=$HOME/.composer/vendor/bin:$PATH
 
