@@ -17,6 +17,9 @@ PATH=/usr/local/sbin:$PATH
 #set for Android ADT & java_home
 PATH=$HOME/Development/adt-bundle/sdk/platform-tools:$HOME/Development/adt-bundle/sdk/tools:$PATH
 
+#set for php composer
+PATH=$HOME/.composer/vendor/bin:$PATH
+
 ######  ALIAS  ########
 alias grep='grep --color=auto'
 alias pg='ps aux | grep'
