@@ -17,6 +17,9 @@ PATH=/usr/local/sbin:$PATH
 #set for php composer
 PATH=$HOME/.composer/vendor/bin:$PATH
 
+#After installed android studio, set android SDK path
+PATH=$HOME/Library/Android/sdk/platform-tools:$HOME/Library/Android/sdk/tools:$PATH
+
 ######  ALIAS  ########
 alias grep='grep --color=auto'
 alias pg='ps aux | grep'
