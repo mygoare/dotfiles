@@ -4,11 +4,8 @@
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-# This loads NVM
-[ -d $HOME/.nvm/ ] && { [[ -s "$HOME/.nvm/nvm.sh" ]] && . "$HOME/.nvm/nvm.sh" }
-
-# export $NODE_PATH
-[ -d $HOME/.nvm/ ] && { export NODE_PATH=$NVM_DIR/$(nvm_ls current)/lib/node_modules }
+# NVM
+[ -d $HOME/.nvm/ ] && . $HOME/.nvm/nvm.sh
 
 # installed by homebrew will be ln -s to /usr/local/bin/ dir ( before /usr/bin/  )
 PATH=/usr/local/bin:$PATH
