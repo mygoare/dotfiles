@@ -272,9 +272,6 @@ set laststatus=2
 set guifont=Monaco\ for\ Powerline
 let g:Powerline_symbols = 'fancy'
 
-"markdown
-nmap <leader>md :%!~/Projects/vim/Markdown.pl --html4tags <CR>
-
 "put it just after Bundle 'molokai', it works
 set background=dark
 if filereadable(expand("~/.vim/bundle/vim-colors-solarized/colors/solarized.vim"))

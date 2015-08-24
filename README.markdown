@@ -1,6 +1,3 @@
-![jiong](https://raw.githubusercontent.com/mygoare/.vim/master/jiong.png)
-_______
-
 You'd better to use vim compiled with `+clipboard`.
 Read [here](http://vimcasts.org/blog/2013/11/getting-vim-with-clipboard-support/) for more.
 
@@ -23,14 +20,6 @@ It is simple:
     cd ~/.oh-my-zsh/custom/plugins/
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 
-### Markdown.pl
-
-It's a perl file to convert the [markdown](http://daringfireball.net/projects/markdown/) format text to html code.
-
 ### Manaco-Powerline.otf
 
 It's the powerline vim plugin font needed, install it to your mac, then set this font at your iterm2
-
-### I am using `Source Code Pro` as my programming font
-
-Source Code Pro [Download](http://sourceforge.net/projects/sourcecodepro.adobe/files/)
