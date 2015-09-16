@@ -75,3 +75,6 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
     --cache=$HOME/.npm/.cache/cnpm \
     --disturl=https://npm.taobao.org/dist \
     --userconfig=$HOME/.cnpmrc"
+
+#export http_proxy=http://127.0.0.1:3213
+#export https_proxy=http://127.0.0.1:3213
