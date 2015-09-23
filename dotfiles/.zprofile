@@ -15,7 +15,7 @@ PATH=/usr/local/sbin:$PATH
 PATH=$HOME/.composer/vendor/bin:$PATH
 
 #After installed android studio, set android SDK path
-PATH=$HOME/Library/Android/sdk/platform-tools:$HOME/Library/Android/sdk/tools:$PATH
+#PATH=$HOME/Library/Android/sdk/platform-tools:$HOME/Library/Android/sdk/tools:$PATH
 
 ######  ALIAS  ########
 alias grep='grep --color=auto'
@@ -78,3 +78,4 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
 
 #export http_proxy=http://127.0.0.1:3213
 #export https_proxy=http://127.0.0.1:3213
+export ANDROID_HOME=/usr/local/opt/android-sdk
