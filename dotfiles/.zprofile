@@ -61,20 +61,6 @@ alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
 SAVEHIST=1000
 
 ######  OTHERS  ########
-# set for autojump
-if brew -v >/dev/null 2>&1; then
-[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
-fi
-
-#https://gist.github.com/nicholascloud/5372443#comment-815301
-function npmls() {
-  npm ls "$@" | grep "^[└├]" | sed "s/─┬/──/g"
-}
-
-alias cnpm="npm --registry=https://registry.npm.taobao.org \
-    --cache=$HOME/.npm/.cache/cnpm \
-    --disturl=https://npm.taobao.org/dist \
-    --userconfig=$HOME/.cnpmrc"
 
 #export http_proxy=http://127.0.0.1:3213
 #export https_proxy=http://127.0.0.1:3213
