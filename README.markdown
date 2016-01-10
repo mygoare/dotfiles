@@ -4,12 +4,6 @@ Read [here](http://vimcasts.org/blog/2013/11/getting-vim-with-clipboard-support/
 ### How to install
 
     curl https://raw.githubusercontent.com/mygoare/.vim/master/kit/install.sh | bash && vim +BundleInstall! +qall
-    
-##### After that, find `kit` folder
-
-`sh install.sh` to install vundle and link dotfiles.
-
-`sh zsh.sh` to install oh-my-zsh and switch to zsh.
 
 ### About oh-my-zsh
 
