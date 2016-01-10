@@ -23,7 +23,7 @@ else
   echo "\033[0;33mYou have installed vundle.\033[0m"
 fi
 
-for var in .gitconfig .jshintrc .tmux.conf .zshrc .zprofile .gemrc; do
+for var in .gitconfig .zshrc .zprofile .gemrc; do
   [ -f $HOME/$var ] && mv $HOME/$var $HOME/.pre$var
   ln -sf ~/Projects/vim/dotfiles/$var $HOME/$var
 done
