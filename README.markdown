@@ -14,6 +14,4 @@ It is simple:
     cd ~/.oh-my-zsh/custom/plugins/
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 
-### Manaco-Powerline.otf
-
-It's the powerline vim plugin font needed, install it to your mac, then set this font at your iterm2
+### I love Consolas font
