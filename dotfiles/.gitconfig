@@ -20,3 +20,5 @@
   tool = vimdiff
 [github]
 	user = mygoare
+[url "https://"]
+	insteadOf = git://
