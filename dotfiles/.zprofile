@@ -64,4 +64,4 @@ SAVEHIST=1000
 #export https_proxy=http://127.0.0.1:3213
 export ANDROID_HOME=/usr/local/Cellar/android-sdk/24.4.1_1
 
-alias p='export http_proxy=http://127.0.0.1:3213;export https_proxy=http://127.0.0.1:3213;'
+alias px='export http_proxy=http://127.0.0.1:3213;export https_proxy=http://127.0.0.1:3213;'
