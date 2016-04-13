@@ -65,6 +65,7 @@ SAVEHIST=1000
 export ANDROID_HOME=/usr/local/Cellar/android-sdk/24.4.1_1
 
 alias px='export http_proxy=http://127.0.0.1:3213;export https_proxy=http://127.0.0.1:3213;'
+alias pop='polipo socksParentProxy=localhost:1080 proxyAddress=0.0.0.0'
 
 alias cnpm="npm --registry=https://registry.npm.taobao.org \
     --cache=$HOME/.npm/.cache/cnpm \
